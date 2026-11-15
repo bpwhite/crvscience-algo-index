@@ -1,0 +1,9 @@
+# Ephemeral local test binaries and bytecode caches
+**/bin/
+**/__pycache__/
+**/*.pyc
+**/*.o
+**/*.class
+**/*.exe
+**/test_runner*
+.DS_Store
