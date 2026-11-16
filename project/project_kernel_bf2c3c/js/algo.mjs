@@ -1,0 +1,34 @@
+// SPDX-License-Identifier: GPL-3.0-only
+export function projectKernel(k, a, m) {
+  if (((((k) <= (1))) || (((m) === (0))))) {
+    return 1.0;
+  }
+  const v0 = Math.min(Math.max(a, 0.005), 0.985);
+  const v1 = Number(k);
+  const v2 = ((v1) * (v0));
+  let v3 = 1.0;
+  let v4 = 1.0;
+  for (let i = (1); i < (k); ++i) {
+    v4 = ((v4) * (((v2) / (Number(i)))));
+    v3 = ((v3) + (v4));
+  }
+  const v5 = ((v4) * (((v2) / (v1))));
+  const v6 = ((v5) / (Math.max(((1.0) - (v0)), 0.000000001)));
+  const v7 = ((1.0) / (((v3) + (v6))));
+  let v8 = v7;
+  let v9 = 0.0;
+  for (let j = (0); j < (k); ++j) {
+    if (((j) > (0))) {
+      v8 = ((v8) * (((v2) / (Number(j)))));
+    }
+    if (((j) >= (m))) {
+      let v10 = ((Number(((k) - (j)))) / (v1));
+      for (let t = (0); t < (m); ++t) {
+        v10 = ((v10) * (((Number(((j) - (t)))) / (Number(Math.max(((((k) - (1))) - (t)), 1))))));
+      }
+      v9 = ((v9) + (((v8) * (v10))));
+    }
+  }
+  const v11 = ((Math.pow(v0, Number(m))) * (((1.0) - (v0))));
+  return Math.min(Math.max(((v9) / (Math.max(v11, 0.000000000001))), 0.05), 8.0);
+}

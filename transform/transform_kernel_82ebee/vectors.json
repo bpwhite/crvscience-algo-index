@@ -1,0 +1,139 @@
+{
+  "canonical_slug": "transform_kernel_82ebee",
+  "category": "transform",
+  "epsilon": 1e-7,
+  "cases": [
+    {
+      "label": "singleton_unit",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.25
+        },
+        {
+          "kind": "f64",
+          "value": 0.5
+        },
+        {
+          "kind": "f64",
+          "value": 0.85
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 20.807210873630584
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "ascending_ordered_5",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.5
+        },
+        {
+          "kind": "f64",
+          "value": 0.85
+        },
+        {
+          "kind": "f64",
+          "value": 1.2
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 18.137088660010157
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "descending_ordered_6",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.85
+        },
+        {
+          "kind": "f64",
+          "value": 1.2
+        },
+        {
+          "kind": "f64",
+          "value": 0.15
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 31.960977671339016
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "mixed_duplicates_7",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 1.2
+        },
+        {
+          "kind": "f64",
+          "value": 0.15
+        },
+        {
+          "kind": "f64",
+          "value": 0.65
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 16.78417709849896
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "uniform_distribution_4",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.15
+        },
+        {
+          "kind": "f64",
+          "value": 0.65
+        },
+        {
+          "kind": "f64",
+          "value": 0.35
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 47.30635589561977
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "pseudo_random_prime_11",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.65
+        },
+        {
+          "kind": "f64",
+          "value": 0.35
+        },
+        {
+          "kind": "f64",
+          "value": 0.25
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 32.87042329725208
+      },
+      "expected_mut_slices": {}
+    }
+  ]
+}

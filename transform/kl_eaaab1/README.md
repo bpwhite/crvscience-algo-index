@@ -1,0 +1,24 @@
+# `kl_eaaab1`
+
+- **License**: `GPL-3.0-only`
+- **Information-Theoretic Category**: `transform/` — Applies deterministic numerical, algebraic, or dynamical operators across state spaces or time steps.
+- **Canonical Signature**: `fn(xs: &[f64], ys: &[f64]) -> f64`
+- **Estimated Complexity**: Time `O(n)`, Space `O(1) auxiliary`
+- **Verification Suite**: `5` shared input/output cases in [`vectors.json`](./vectors.json)
+
+## Copy-Paste Implementation Files
+
+| Language | Implementation File(s) | Entrypoint Symbol | Standalone Test Command |
+| :--- | :--- | :--- | :--- |
+| Rust (2021) | `rust/algo.rs` | `kl` | `make test-rust` |
+| C (C11) | `c/algo.h`, `c/algo.c` | `kl` | `make test-c` |
+| C++ (C++20) | `cpp/algo.hpp`, `cpp/algo.cpp` | `algo::kl` | `make test-cpp` |
+| Java (17+) | `java/Algo.java` | `Algo.kl` | `make test-java` |
+| JavaScript (ES2022) | `js/algo.mjs` | `kl` | `make test-js` |
+| Python (3.10+) | `python/algo.py` | `kl` | `make test-python` |
+
+## Build & Test All Installed Toolchains
+
+```sh
+make test
+```
