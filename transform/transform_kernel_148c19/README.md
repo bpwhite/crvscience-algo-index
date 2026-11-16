@@ -1,6 +1,6 @@
 # `transform_kernel_148c19`
 
-- **License**: `GPL-3.0-only`
+- **License**: `GPL-3.0-or-later`
 - **Information-Theoretic Category**: `transform/` — Applies deterministic numerical, algebraic, or dynamical operators across state spaces or time steps.
 - **Canonical Signature**: `fn(a: f64) -> f64`
 - **Estimated Complexity**: Time `O(1)`, Space `O(1) auxiliary`

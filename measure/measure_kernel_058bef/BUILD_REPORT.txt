@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : measure_kernel_058bef
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : measure
 STRUCTURAL HASH                       : 058bef2b03ed2faf2726ce42
 COMPLEXITY (TIME / SPACE)             : O(n) / O(1) auxiliary

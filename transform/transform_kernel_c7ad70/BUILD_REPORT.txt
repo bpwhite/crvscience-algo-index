@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : transform_kernel_c7ad70
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : transform
 STRUCTURAL HASH                       : c7ad708cbbbfc17833ab675c
 COMPLEXITY (TIME / SPACE)             : O(1) / O(1) auxiliary

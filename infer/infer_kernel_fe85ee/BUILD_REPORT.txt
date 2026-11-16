@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : infer_kernel_fe85ee
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : infer
 STRUCTURAL HASH                       : fe85eefc87b92d967aa9c3b5
 COMPLEXITY (TIME / SPACE)             : O(n) / O(1) auxiliary

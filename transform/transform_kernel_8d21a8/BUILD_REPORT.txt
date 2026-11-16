@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : transform_kernel_8d21a8
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : transform
 STRUCTURAL HASH                       : 8d21a8628ca343e1fe594229
 COMPLEXITY (TIME / SPACE)             : O(1) / O(1) auxiliary

@@ -1,6 +1,6 @@
 # `encode_kernel_7c0c26`
 
-- **License**: `GPL-3.0-only`
+- **License**: `GPL-3.0-or-later`
 - **Information-Theoretic Category**: `encode/` — Transforms symbol representations toward source entropy bounds, channel redundancy, or uniform hash diffusion.
 - **Canonical Signature**: `fn(k: i64, m: i64, q: i64) -> i64`
 - **Estimated Complexity**: Time `O(1)`, Space `O(1) auxiliary`

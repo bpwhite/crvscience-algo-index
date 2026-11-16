@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : encode_kernel_2360ec
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : encode
 STRUCTURAL HASH                       : 2360ec64a1f07a7be0d67c8c
 COMPLEXITY (TIME / SPACE)             : O(1) / O(1) auxiliary

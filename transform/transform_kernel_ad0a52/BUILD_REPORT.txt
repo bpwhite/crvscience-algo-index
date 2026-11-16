@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : transform_kernel_ad0a52
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : transform
 STRUCTURAL HASH                       : ad0a5245a5ef0952b924e4dc
 COMPLEXITY (TIME / SPACE)             : O(1) / O(1) auxiliary

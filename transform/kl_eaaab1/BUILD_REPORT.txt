@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : kl_eaaab1
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : transform
 STRUCTURAL HASH                       : eaaab1b768ad8f6faf0cf907
 COMPLEXITY (TIME / SPACE)             : O(n) / O(1) auxiliary

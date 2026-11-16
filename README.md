@@ -1,8 +1,8 @@
-# Polyglot Algorithm Catalog (GPL-3.0-only)
+# Polyglot Algorithm Catalog (GPL-3.0-or-later)
 
 Self-contained, zero-dependency reference implementations in **Rust, C (C11), C++ (C++20), Java (17+), JavaScript (ES2022), and Python (3.10+)**, harvested exclusively from **GNU GPL v3** sources, organized along an information-theoretic taxonomy, and verified against shared input/output test vectors (`vectors.json`).
 
-- **License**: GNU General Public License v3.0 (`SPDX-License-Identifier: GPL-3.0-only`)
+- **License**: GNU General Public License v3.0 (`SPDX-License-Identifier: GPL-3.0-or-later`)
 - **Source & Citation**: [CRV Science Apps](https://crvscience.com/apps) (`https://crvscience.com/apps`)
 
 ## Information-Theoretic Directory Structure

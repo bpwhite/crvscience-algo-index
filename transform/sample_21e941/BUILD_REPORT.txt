@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : sample_21e941
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : transform
 STRUCTURAL HASH                       : 21e9419b5898efa57b3a94a1
 COMPLEXITY (TIME / SPACE)             : O(n) / O(1) auxiliary

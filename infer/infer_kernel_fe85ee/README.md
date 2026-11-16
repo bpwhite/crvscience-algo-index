@@ -1,6 +1,6 @@
 # `infer_kernel_fe85ee`
 
-- **License**: `GPL-3.0-only`
+- **License**: `GPL-3.0-or-later`
 - **Information-Theoretic Category**: `infer/` — Extracts low-dimensional latent parameters or summary statistics maximizing mutual information I(X; Z).
 - **Canonical Signature**: `fn(xs: &[f64]) -> f64`
 - **Estimated Complexity**: Time `O(n)`, Space `O(1) auxiliary`

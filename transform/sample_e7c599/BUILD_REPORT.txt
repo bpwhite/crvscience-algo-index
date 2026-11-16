@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : sample_e7c599
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : transform
 STRUCTURAL HASH                       : e7c599b945bf27f46d0a576d
 COMPLEXITY (TIME / SPACE)             : O(n) / O(1) auxiliary

@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : transform_kernel_82ebee
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : transform
 STRUCTURAL HASH                       : 82ebee12857724df5e6968fb
 COMPLEXITY (TIME / SPACE)             : O(1) / O(1) auxiliary

@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : similarity_0515e4
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : infer
 STRUCTURAL HASH                       : 0515e453d63158235e0580da
 COMPLEXITY (TIME / SPACE)             : O(n) / O(1) auxiliary

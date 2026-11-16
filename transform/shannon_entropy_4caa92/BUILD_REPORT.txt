@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : shannon_entropy_4caa92
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : transform
 STRUCTURAL HASH                       : 4caa92b1c9f8c4a61c0d8bf4
 COMPLEXITY (TIME / SPACE)             : O(n) / O(1) auxiliary

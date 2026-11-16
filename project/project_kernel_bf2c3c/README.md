@@ -1,6 +1,6 @@
 # `project_kernel_bf2c3c`
 
-- **License**: `GPL-3.0-only`
+- **License**: `GPL-3.0-or-later`
 - **Information-Theoretic Category**: `project/` — Expands compact geometric or parametric seeds into spatial coordinates, raster cells, or quasi-random sequences.
 - **Canonical Signature**: `fn(k: i64, a: f64, m: i64) -> f64`
 - **Estimated Complexity**: Time `O(n^2)`, Space `O(1) auxiliary`

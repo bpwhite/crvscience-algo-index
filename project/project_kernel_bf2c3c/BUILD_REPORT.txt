@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : project_kernel_bf2c3c
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : project
 STRUCTURAL HASH                       : bf2c3c4b3f5e004dca0c6f9a
 COMPLEXITY (TIME / SPACE)             : O(n^2) / O(1) auxiliary

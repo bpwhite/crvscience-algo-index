@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : encode_kernel_3c73f6
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : encode
 STRUCTURAL HASH                       : 3c73f6105fc3d3c93b4f889b
 COMPLEXITY (TIME / SPACE)             : O(1) / O(1) auxiliary

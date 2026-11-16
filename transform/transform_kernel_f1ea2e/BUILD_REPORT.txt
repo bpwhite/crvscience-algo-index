@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : transform_kernel_f1ea2e
-LICENSE                               : GPL-3.0-only
+LICENSE                               : GPL-3.0-or-later
 CATEGORY                              : transform
 STRUCTURAL HASH                       : f1ea2e8f70b5d0becf9c3116
 COMPLEXITY (TIME / SPACE)             : O(n) / O(1) auxiliary
