@@ -1,0 +1,189 @@
+{
+  "canonical_slug": "encode_kernel_b4829f",
+  "category": "encode",
+  "epsilon": 1e-7,
+  "cases": [
+    {
+      "label": "singleton_unit",
+      "inputs": [
+        {
+          "kind": "array_i64",
+          "value": [
+            5
+          ]
+        },
+        {
+          "kind": "i64",
+          "value": 5
+        }
+      ],
+      "expected_return": null,
+      "expected_mut_slices": {
+        "buf": [
+          37
+        ]
+      }
+    },
+    {
+      "label": "ascending_ordered_5",
+      "inputs": [
+        {
+          "kind": "array_i64",
+          "value": [
+            1,
+            3,
+            5,
+            7,
+            9
+          ]
+        },
+        {
+          "kind": "i64",
+          "value": 9
+        }
+      ],
+      "expected_return": null,
+      "expected_mut_slices": {
+        "buf": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      }
+    },
+    {
+      "label": "descending_ordered_6",
+      "inputs": [
+        {
+          "kind": "array_i64",
+          "value": [
+            17,
+            14,
+            11,
+            8,
+            5,
+            2
+          ]
+        },
+        {
+          "kind": "i64",
+          "value": 4
+        }
+      ],
+      "expected_return": null,
+      "expected_mut_slices": {
+        "buf": [
+          17,
+          14,
+          11,
+          8,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "label": "mixed_duplicates_7",
+      "inputs": [
+        {
+          "kind": "array_i64",
+          "value": [
+            4,
+            1,
+            4,
+            9,
+            2,
+            9,
+            5
+          ]
+        },
+        {
+          "kind": "i64",
+          "value": 7
+        }
+      ],
+      "expected_return": null,
+      "expected_mut_slices": {
+        "buf": [
+          132,
+          1,
+          4,
+          9,
+          2,
+          9,
+          5
+        ]
+      }
+    },
+    {
+      "label": "uniform_distribution_4",
+      "inputs": [
+        {
+          "kind": "array_i64",
+          "value": [
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "kind": "i64",
+          "value": 12
+        }
+      ],
+      "expected_return": null,
+      "expected_mut_slices": {
+        "buf": [
+          3,
+          19,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "label": "pseudo_random_prime_11",
+      "inputs": [
+        {
+          "kind": "array_i64",
+          "value": [
+            24,
+            12,
+            29,
+            17,
+            5,
+            22,
+            10,
+            27,
+            15,
+            3,
+            20
+          ]
+        },
+        {
+          "kind": "i64",
+          "value": 3
+        }
+      ],
+      "expected_return": null,
+      "expected_mut_slices": {
+        "buf": [
+          24,
+          12,
+          29,
+          17,
+          5,
+          22,
+          10,
+          27,
+          15,
+          3,
+          20
+        ]
+      }
+    }
+  ]
+}
