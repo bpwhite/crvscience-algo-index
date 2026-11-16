@@ -3,6 +3,7 @@
 Self-contained, zero-dependency reference implementations in **Rust, C (C11), C++ (C++20), Java (17+), JavaScript (ES2022), and Python (3.10+)**, harvested exclusively from **GNU GPL v3** sources, organized along an information-theoretic taxonomy, and verified against shared input/output test vectors (`vectors.json`).
 
 - **License**: GNU General Public License v3.0 (`SPDX-License-Identifier: GPL-3.0-only`)
+- **Source & Citation**: [CRV Science Apps](https://crvscience.com/apps) (`https://crvscience.com/apps`)
 
 ## Information-Theoretic Directory Structure
 
@@ -74,3 +75,7 @@ Self-contained, zero-dependency reference implementations in **Rust, C (C11), C+
 | `transform` | `transform_kernel_f82f54` | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_f82f54`](./transform/transform_kernel_f82f54/README.md) |
 | `transform` | `transform_kernel_fd4f9f` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_fd4f9f`](./transform/transform_kernel_fd4f9f/README.md) |
 | `transform` | `transform_kernel_ff16eb` | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_ff16eb`](./transform/transform_kernel_ff16eb/README.md) |
+
+## Citation
+
+If you reference or use algorithms from this index, please cite CRV Science Apps: <https://crvscience.com/apps>.
