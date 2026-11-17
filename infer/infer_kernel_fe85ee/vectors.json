@@ -1,0 +1,145 @@
+{
+  "canonical_slug": "infer_kernel_fe85ee",
+  "category": "infer",
+  "epsilon": 1e-7,
+  "cases": [
+    {
+      "label": "empty_boundary",
+      "inputs": [
+        {
+          "kind": "array_f64",
+          "value": []
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 0.0
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "singleton_unit",
+      "inputs": [
+        {
+          "kind": "array_f64",
+          "value": [
+            1.0
+          ]
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 2.0
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "ascending_ordered_5",
+      "inputs": [
+        {
+          "kind": "array_f64",
+          "value": [
+            0.5,
+            1.0,
+            1.5,
+            2.0,
+            2.5
+          ]
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 7.5
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "descending_ordered_6",
+      "inputs": [
+        {
+          "kind": "array_f64",
+          "value": [
+            5.0,
+            4.25,
+            3.5,
+            2.75,
+            2.0,
+            1.25
+          ]
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 29.375
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "mixed_duplicates_7",
+      "inputs": [
+        {
+          "kind": "array_f64",
+          "value": [
+            0.75,
+            2.0,
+            1.0,
+            2.25,
+            1.25,
+            0.25,
+            1.5
+          ]
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 10.5
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "uniform_distribution_4",
+      "inputs": [
+        {
+          "kind": "array_f64",
+          "value": [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ]
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 0.125
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "pseudo_random_prime_11",
+      "inputs": [
+        {
+          "kind": "array_f64",
+          "value": [
+            3.6,
+            2.4000000000000004,
+            1.2000000000000002,
+            3.8000000000000003,
+            2.6,
+            1.4000000000000001,
+            0.2,
+            2.8000000000000003,
+            1.6,
+            0.4,
+            3.0
+          ]
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 52.32
+      },
+      "expected_mut_slices": {}
+    }
+  ]
+}
