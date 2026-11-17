@@ -1,0 +1,25 @@
+========================================================================
+ALGORITHM BUILD & VERIFICATION REPORT : erf_approx_148c19
+LICENSE                               : GPL-3.0-only
+CATEGORY                              : transform
+STRUCTURAL HASH                       : 148c1979fc13d7f2c30286a0
+COMPLEXITY (TIME / SPACE)             : O(1) / O(1) auxiliary
+TEST VECTORS                          : 6 deterministic cases (epsilon = 1.0e-7)
+========================================================================
+
+TARGET LANGUAGE      | STATUS               | VECTORS    | BUILD_MS | TEST_MS 
+------------------------------------------------------------------------
+Rust (2021)          | PASSED               | 6          | 319      | 265     
+C (ISO C11)          | PASSED               | 6          | 363      | 71      
+C++ (ISO C++20)      | PASSED               | 6          | 1169     | 90      
+Java (17+)           | PASSED               | 6          | 528      | 57      
+JavaScript (ES2022)  | PASSED               | 6          | 0        | 131     
+Python (3.10+)       | PASSED               | 6          | 57       | 58      
+
+TOOLCHAIN SUMMARY
+- rust: rustc 1.100.0 (0ef1bc386 2026-11-09) [flags: --edition 2021 -O]
+- c: gcc (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 16.2.0 [flags: -std=c11 -O2 -Wall -Wextra -Werror -lm]
+- cpp: c++ (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 16.2.0 [flags: -std=c++20 -O2 -Wall -Wextra -Werror]
+- java: javac 21.0.12.1 [flags: javac + java -ea]
+- js: node v24.22.0 [flags: node --test]
+- python: Python 3.12.10 [flags: python3 -B python/test_algo.py]

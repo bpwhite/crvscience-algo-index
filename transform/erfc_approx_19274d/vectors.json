@@ -1,0 +1,91 @@
+{
+  "canonical_slug": "erfc_approx_19274d",
+  "category": "transform",
+  "epsilon": 1e-7,
+  "cases": [
+    {
+      "label": "singleton_unit",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.25
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 0.7236737386464728
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "ascending_ordered_5",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.5
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 0.4794999836952528
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "descending_ordered_6",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.85
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 0.22933207250601167
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "mixed_duplicates_7",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 1.2
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 0.0896859644937875
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "uniform_distribution_4",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.15
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 0.8320040956571727
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "pseudo_random_prime_11",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.65
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 0.3579706288442113
+      },
+      "expected_mut_slices": {}
+    }
+  ]
+}
