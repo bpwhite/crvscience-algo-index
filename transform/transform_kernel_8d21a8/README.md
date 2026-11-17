@@ -1,10 +1,20 @@
 # `transform_kernel_8d21a8`
 
-- **License**: `GPL-3.0-or-later`
+- **License**: `GPL-3.0-only`
 - **Information-Theoretic Category**: `transform/` — Applies deterministic numerical, algebraic, or dynamical operators across state spaces or time steps.
 - **Canonical Signature**: `fn(a: f64, b: f64, c: f64, d: f64) -> f64`
 - **Estimated Complexity**: Time `O(1)`, Space `O(1) auxiliary`
 - **Verification Suite**: `6` shared input/output cases in [`vectors.json`](./vectors.json)
+
+## Description
+
+Nonlinear transcendental transformation kernel (fn(a: f64, b: f64, c: f64, d: f64) -> f64) computing smooth activation, decay, or likelihood curves.
+
+## 3 Real-World Uses
+
+1. Logistic/sigmoid probability mapping and log-sum-exp stabilization in statistical and ML inference.
+2. Physical decay, diffusion, and reaction-kinetics modeling in scientific computing.
+3. Dynamic range compression and gain control in audio and sensor signal processing.
 
 ## Copy-Paste Implementation Files
 

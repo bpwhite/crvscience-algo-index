@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : transform_kernel_4b331b
-LICENSE                               : GPL-3.0-or-later
+LICENSE                               : GPL-3.0-only
 CATEGORY                              : transform
 STRUCTURAL HASH                       : 4b331bfe3084a2d2ca3f7a55
 COMPLEXITY (TIME / SPACE)             : O(1) / O(1) auxiliary
@@ -9,12 +9,12 @@ TEST VECTORS                          : 6 deterministic cases (epsilon = 1.0e-7)
 
 TARGET LANGUAGE      | STATUS               | VECTORS    | BUILD_MS | TEST_MS 
 ------------------------------------------------------------------------
-Rust (2021)          | PASSED               | 6          | 266      | 213     
-C (ISO C11)          | PASSED               | 6          | 288      | 56      
-C++ (ISO C++20)      | PASSED               | 6          | 684      | 74      
-Java (17+)           | PASSED               | 6          | 502      | 64      
-JavaScript (ES2022)  | PASSED               | 6          | 0        | 140     
-Python (3.10+)       | PASSED               | 6          | 61       | 67      
+Rust (2021)          | PASSED               | 6          | 265      | 215     
+C (ISO C11)          | PASSED               | 6          | 319      | 62      
+C++ (ISO C++20)      | PASSED               | 6          | 657      | 65      
+Java (17+)           | PASSED               | 6          | 493      | 59      
+JavaScript (ES2022)  | PASSED               | 6          | 0        | 137     
+Python (3.10+)       | PASSED               | 6          | 62       | 68      
 
 TOOLCHAIN SUMMARY
 - rust: rustc 1.100.0 (0ef1bc386 2026-11-09) [flags: --edition 2021 -O]

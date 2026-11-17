@@ -1,0 +1,173 @@
+{
+  "canonical_slug": "transform_kernel_5f0f01",
+  "category": "transform",
+  "epsilon": 1e-7,
+  "cases": [
+    {
+      "label": "empty_boundary",
+      "inputs": [
+        {
+          "kind": "array_f64",
+          "value": []
+        },
+        {
+          "kind": "f64",
+          "value": 0.85
+        }
+      ],
+      "expected_return": {
+        "kind": "i64",
+        "value": 0
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "singleton_unit",
+      "inputs": [
+        {
+          "kind": "array_f64",
+          "value": [
+            1.0
+          ]
+        },
+        {
+          "kind": "f64",
+          "value": 0.5
+        }
+      ],
+      "expected_return": {
+        "kind": "i64",
+        "value": 0
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "ascending_ordered_5",
+      "inputs": [
+        {
+          "kind": "array_f64",
+          "value": [
+            0.5,
+            1.0,
+            1.5,
+            2.0,
+            2.5
+          ]
+        },
+        {
+          "kind": "f64",
+          "value": 0.85
+        }
+      ],
+      "expected_return": {
+        "kind": "i64",
+        "value": 1
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "descending_ordered_6",
+      "inputs": [
+        {
+          "kind": "array_f64",
+          "value": [
+            5.0,
+            4.25,
+            3.5,
+            2.75,
+            2.0,
+            1.25
+          ]
+        },
+        {
+          "kind": "f64",
+          "value": 1.2
+        }
+      ],
+      "expected_return": {
+        "kind": "i64",
+        "value": 5
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "mixed_duplicates_7",
+      "inputs": [
+        {
+          "kind": "array_f64",
+          "value": [
+            0.75,
+            2.0,
+            1.0,
+            2.25,
+            1.25,
+            0.25,
+            1.5
+          ]
+        },
+        {
+          "kind": "f64",
+          "value": 0.15
+        }
+      ],
+      "expected_return": {
+        "kind": "i64",
+        "value": 5
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "uniform_distribution_4",
+      "inputs": [
+        {
+          "kind": "array_f64",
+          "value": [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ]
+        },
+        {
+          "kind": "f64",
+          "value": 0.65
+        }
+      ],
+      "expected_return": {
+        "kind": "i64",
+        "value": 0
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "pseudo_random_prime_11",
+      "inputs": [
+        {
+          "kind": "array_f64",
+          "value": [
+            3.6,
+            2.4000000000000004,
+            1.2000000000000002,
+            3.8000000000000003,
+            2.6,
+            1.4000000000000001,
+            0.2,
+            2.8000000000000003,
+            1.6,
+            0.4,
+            3.0
+          ]
+        },
+        {
+          "kind": "f64",
+          "value": 0.35
+        }
+      ],
+      "expected_return": {
+        "kind": "i64",
+        "value": 9
+      },
+      "expected_mut_slices": {}
+    }
+  ]
+}

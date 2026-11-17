@@ -19,72 +19,46 @@ Self-contained, zero-dependency reference implementations in **Rust, C (C11), C+
 
 ## Verified Algorithms
 
-| Category | Algorithm | Canonical Signature | Time Complexity | Path |
-| :--- | :--- | :--- | :--- | :--- |
-| `encode` | `encode_kernel_2360ec` | `fn(buf: &mut [i64], k: i64) -> ()` | `O(1)` | [`encode/encode_kernel_2360ec`](./encode/encode_kernel_2360ec/README.md) |
-| `encode` | `encode_kernel_3c73f6` | `fn(k: i64, m: i64, q: i64, p: i64) -> i64` | `O(1)` | [`encode/encode_kernel_3c73f6`](./encode/encode_kernel_3c73f6/README.md) |
-| `encode` | `encode_kernel_7c0c26` | `fn(k: i64, m: i64, q: i64) -> i64` | `O(1)` | [`encode/encode_kernel_7c0c26`](./encode/encode_kernel_7c0c26/README.md) |
-| `encode` | `encode_kernel_b4829f` | `fn(buf: &mut [i64], k: i64) -> ()` | `O(1)` | [`encode/encode_kernel_b4829f`](./encode/encode_kernel_b4829f/README.md) |
-| `encode` | `encode_kernel_cada2d` | `fn(xs: &[i64], k: i64) -> i64` | `O(1)` | [`encode/encode_kernel_cada2d`](./encode/encode_kernel_cada2d/README.md) |
-| `encode` | `encode_kernel_fc4ed5` | `fn(k: i64, m: i64, q: i64) -> bool` | `O(1)` | [`encode/encode_kernel_fc4ed5`](./encode/encode_kernel_fc4ed5/README.md) |
-| `infer` | `infer_kernel_d62cfe` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`infer/infer_kernel_d62cfe`](./infer/infer_kernel_d62cfe/README.md) |
-| `infer` | `infer_kernel_fe85ee` | `fn(xs: &[f64]) -> f64` | `O(n)` | [`infer/infer_kernel_fe85ee`](./infer/infer_kernel_fe85ee/README.md) |
-| `infer` | `similarity_0515e4` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`infer/similarity_0515e4`](./infer/similarity_0515e4/README.md) |
-| `measure` | `measure_kernel_058bef` | `fn(xs: &[f64], a: f64) -> f64` | `O(n)` | [`measure/measure_kernel_058bef`](./measure/measure_kernel_058bef/README.md) |
-| `measure` | `measure_kernel_1a673c` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_1a673c`](./measure/measure_kernel_1a673c/README.md) |
-| `measure` | `measure_kernel_2ac41f` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_2ac41f`](./measure/measure_kernel_2ac41f/README.md) |
-| `measure` | `measure_kernel_3548e5` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_3548e5`](./measure/measure_kernel_3548e5/README.md) |
-| `measure` | `measure_kernel_3a4c71` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_3a4c71`](./measure/measure_kernel_3a4c71/README.md) |
-| `measure` | `measure_kernel_9139c8` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_9139c8`](./measure/measure_kernel_9139c8/README.md) |
-| `measure` | `measure_kernel_abc537` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_abc537`](./measure/measure_kernel_abc537/README.md) |
-| `measure` | `measure_kernel_b81f82` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_b81f82`](./measure/measure_kernel_b81f82/README.md) |
-| `project` | `project_kernel_bf2c3c` | `fn(k: i64, a: f64, m: i64) -> f64` | `O(n^2)` | [`project/project_kernel_bf2c3c`](./project/project_kernel_bf2c3c/README.md) |
-| `transform` | `binary_entropy_422d08` | `fn(a: f64) -> f64` | `O(1)` | [`transform/binary_entropy_422d08`](./transform/binary_entropy_422d08/README.md) |
-| `transform` | `kl_eaaab1` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`transform/kl_eaaab1`](./transform/kl_eaaab1/README.md) |
-| `transform` | `sample_21e941` | `fn(a: f64, b: f64) -> i64` | `O(n)` | [`transform/sample_21e941`](./transform/sample_21e941/README.md) |
-| `transform` | `sample_e7c599` | `fn(a: f64, b: f64) -> i64` | `O(n)` | [`transform/sample_e7c599`](./transform/sample_e7c599/README.md) |
-| `transform` | `shannon_entropy_4caa92` | `fn(xs: &[i64]) -> f64` | `O(n)` | [`transform/shannon_entropy_4caa92`](./transform/shannon_entropy_4caa92/README.md) |
-| `transform` | `shannon_entropy_6a869d` | `fn(xs: &[i64]) -> f64` | `O(n)` | [`transform/shannon_entropy_6a869d`](./transform/shannon_entropy_6a869d/README.md) |
-| `transform` | `transform_kernel_00e218` | `fn(xs: &[f64], a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_00e218`](./transform/transform_kernel_00e218/README.md) |
-| `transform` | `transform_kernel_0198b8` | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64, a6: f64) -> f64` | `O(1)` | [`transform/transform_kernel_0198b8`](./transform/transform_kernel_0198b8/README.md) |
-| `transform` | `transform_kernel_06fe1d` | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64) -> f64` | `O(1)` | [`transform/transform_kernel_06fe1d`](./transform/transform_kernel_06fe1d/README.md) |
-| `transform` | `transform_kernel_0fb260` | `fn(k: i64, a: f64, m: i64) -> f64` | `O(1)` | [`transform/transform_kernel_0fb260`](./transform/transform_kernel_0fb260/README.md) |
-| `transform` | `transform_kernel_148c19` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_148c19`](./transform/transform_kernel_148c19/README.md) |
-| `transform` | `transform_kernel_19274d` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_19274d`](./transform/transform_kernel_19274d/README.md) |
-| `transform` | `transform_kernel_204748` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_204748`](./transform/transform_kernel_204748/README.md) |
-| `transform` | `transform_kernel_206ed1` | `fn(flag0: bool, a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_206ed1`](./transform/transform_kernel_206ed1/README.md) |
-| `transform` | `transform_kernel_21a225` | `fn(a: f64) -> f64` | `O(n)` | [`transform/transform_kernel_21a225`](./transform/transform_kernel_21a225/README.md) |
-| `transform` | `transform_kernel_2a42e5` | `fn(a: f64, b: f64) -> f64` | `O(1)` | [`transform/transform_kernel_2a42e5`](./transform/transform_kernel_2a42e5/README.md) |
-| `transform` | `transform_kernel_2dfbfc` | `fn(a: f64, b: f64) -> f64` | `O(1)` | [`transform/transform_kernel_2dfbfc`](./transform/transform_kernel_2dfbfc/README.md) |
-| `transform` | `transform_kernel_348de4` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_348de4`](./transform/transform_kernel_348de4/README.md) |
-| `transform` | `transform_kernel_3a740f` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_3a740f`](./transform/transform_kernel_3a740f/README.md) |
-| `transform` | `transform_kernel_3e4fc2` | `fn(a: f64) -> f64` | `O(n)` | [`transform/transform_kernel_3e4fc2`](./transform/transform_kernel_3e4fc2/README.md) |
-| `transform` | `transform_kernel_404a45` | `fn(a: f64, b: f64, c: f64, d: f64) -> f64` | `O(1)` | [`transform/transform_kernel_404a45`](./transform/transform_kernel_404a45/README.md) |
-| `transform` | `transform_kernel_4228b9` | `fn(a: f64, b: f64, c: f64, d: f64) -> f64` | `O(1)` | [`transform/transform_kernel_4228b9`](./transform/transform_kernel_4228b9/README.md) |
-| `transform` | `transform_kernel_4b331b` | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_4b331b`](./transform/transform_kernel_4b331b/README.md) |
-| `transform` | `transform_kernel_4dd3a7` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_4dd3a7`](./transform/transform_kernel_4dd3a7/README.md) |
-| `transform` | `transform_kernel_5682e7` | `fn(k: i64, m: i64, q: i64, p: i64) -> f64` | `O(1)` | [`transform/transform_kernel_5682e7`](./transform/transform_kernel_5682e7/README.md) |
-| `transform` | `transform_kernel_60e071` | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_60e071`](./transform/transform_kernel_60e071/README.md) |
-| `transform` | `transform_kernel_7dd476` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_7dd476`](./transform/transform_kernel_7dd476/README.md) |
-| `transform` | `transform_kernel_7ed09f` | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_7ed09f`](./transform/transform_kernel_7ed09f/README.md) |
-| `transform` | `transform_kernel_82ebee` | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_82ebee`](./transform/transform_kernel_82ebee/README.md) |
-| `transform` | `transform_kernel_83db4a` | `fn(a: f64, b: f64) -> f64` | `O(1)` | [`transform/transform_kernel_83db4a`](./transform/transform_kernel_83db4a/README.md) |
-| `transform` | `transform_kernel_8d21a8` | `fn(a: f64, b: f64, c: f64, d: f64) -> f64` | `O(1)` | [`transform/transform_kernel_8d21a8`](./transform/transform_kernel_8d21a8/README.md) |
-| `transform` | `transform_kernel_8fc1ab` | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_8fc1ab`](./transform/transform_kernel_8fc1ab/README.md) |
-| `transform` | `transform_kernel_a2610d` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_a2610d`](./transform/transform_kernel_a2610d/README.md) |
-| `transform` | `transform_kernel_ad0a52` | `fn(k: i64, m: i64, q: i64) -> f64` | `O(1)` | [`transform/transform_kernel_ad0a52`](./transform/transform_kernel_ad0a52/README.md) |
-| `transform` | `transform_kernel_c7ad70` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_c7ad70`](./transform/transform_kernel_c7ad70/README.md) |
-| `transform` | `transform_kernel_c7d018` | `fn(k: i64, a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_c7d018`](./transform/transform_kernel_c7d018/README.md) |
-| `transform` | `transform_kernel_d30945` | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64` | `O(1)` | [`transform/transform_kernel_d30945`](./transform/transform_kernel_d30945/README.md) |
-| `transform` | `transform_kernel_de3a96` | `fn(xs: &[f64], a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_de3a96`](./transform/transform_kernel_de3a96/README.md) |
-| `transform` | `transform_kernel_e7f214` | `fn(k: i64, a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_e7f214`](./transform/transform_kernel_e7f214/README.md) |
-| `transform` | `transform_kernel_ea4f33` | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64` | `O(1)` | [`transform/transform_kernel_ea4f33`](./transform/transform_kernel_ea4f33/README.md) |
-| `transform` | `transform_kernel_eb3a6e` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_eb3a6e`](./transform/transform_kernel_eb3a6e/README.md) |
-| `transform` | `transform_kernel_ee9486` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_ee9486`](./transform/transform_kernel_ee9486/README.md) |
-| `transform` | `transform_kernel_f1ea2e` | `fn(k: i64) -> i64` | `O(n)` | [`transform/transform_kernel_f1ea2e`](./transform/transform_kernel_f1ea2e/README.md) |
-| `transform` | `transform_kernel_f82f54` | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_f82f54`](./transform/transform_kernel_f82f54/README.md) |
-| `transform` | `transform_kernel_fd4f9f` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_fd4f9f`](./transform/transform_kernel_fd4f9f/README.md) |
-| `transform` | `transform_kernel_ff16eb` | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_ff16eb`](./transform/transform_kernel_ff16eb/README.md) |
+| Category | Algorithm | Function & Description | Canonical Signature | Time Complexity | Path |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `encode` | `encode_kernel_3c73f6` | Deterministic bit-level encoding, packing, or flag-manipulation kernel (fn(k: i64, m: i64, q: i64, p: i64) -> i64) over integer words or buffers. | `fn(k: i64, m: i64, q: i64, p: i64) -> i64` | `O(1)` | [`encode/encode_kernel_3c73f6`](./encode/encode_kernel_3c73f6/README.md) |
+| `encode` | `encode_kernel_fc4ed5` | Deterministic bit-level encoding, packing, or flag-manipulation kernel (fn(k: i64, m: i64, q: i64) -> bool) over integer words or buffers. | `fn(k: i64, m: i64, q: i64) -> bool` | `O(1)` | [`encode/encode_kernel_fc4ed5`](./encode/encode_kernel_fc4ed5/README.md) |
+| `infer` | `infer_kernel_d62cfe` | Statistical/numerical inference kernel (fn(xs: &[f64], ys: &[f64]) -> f64) estimating summary parameters or integrated quantities. | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`infer/infer_kernel_d62cfe`](./infer/infer_kernel_d62cfe/README.md) |
+| `infer` | `infer_kernel_fe85ee` | Statistical/numerical inference kernel (fn(xs: &[f64]) -> f64) estimating summary parameters or integrated quantities. | `fn(xs: &[f64]) -> f64` | `O(n)` | [`infer/infer_kernel_fe85ee`](./infer/infer_kernel_fe85ee/README.md) |
+| `infer` | `similarity_0515e4` | Computes a scalar similarity, correlation, or distance metric across paired numeric series. | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`infer/similarity_0515e4`](./infer/similarity_0515e4/README.md) |
+| `measure` | `measure_kernel_058bef` | Scalar measurement kernel (fn(xs: &[f64], a: f64) -> f64) reducing input arrays or parameters to a summary metric. | `fn(xs: &[f64], a: f64) -> f64` | `O(n)` | [`measure/measure_kernel_058bef`](./measure/measure_kernel_058bef/README.md) |
+| `measure` | `measure_kernel_3a4c71` | Computes a scalar similarity, correlation, or distance metric across paired numeric series. | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_3a4c71`](./measure/measure_kernel_3a4c71/README.md) |
+| `transform` | `binary_entropy_422d08` | Computes binary Shannon entropy H2(p) in bits from a Bernoulli probability parameter. | `fn(a: f64) -> f64` | `O(1)` | [`transform/binary_entropy_422d08`](./transform/binary_entropy_422d08/README.md) |
+| `transform` | `sample_e7c599` | Executes a deterministic parametric or inverse-CDF sampling kernel over scalar/array inputs. | `fn(a: f64, b: f64) -> i64` | `O(n)` | [`transform/sample_e7c599`](./transform/sample_e7c599/README.md) |
+| `transform` | `transform_kernel_00e218` | Pure deterministic transformation kernel (fn(xs: &[f64], a: f64) -> f64) with O(1) time complexity. | `fn(xs: &[f64], a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_00e218`](./transform/transform_kernel_00e218/README.md) |
+| `transform` | `transform_kernel_0198b8` | Trigonometric/periodic transformation kernel (fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64, a6: f64) -> f64) evaluating smooth angular or wave functions. | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64, a6: f64) -> f64` | `O(1)` | [`transform/transform_kernel_0198b8`](./transform/transform_kernel_0198b8/README.md) |
+| `transform` | `transform_kernel_06fe1d` | Pure deterministic transformation kernel (fn(a: f64, b: f64, c: f64, d: f64, a4: f64) -> f64) with O(1) time complexity. | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64) -> f64` | `O(1)` | [`transform/transform_kernel_06fe1d`](./transform/transform_kernel_06fe1d/README.md) |
+| `transform` | `transform_kernel_0fb260` | Nonlinear transcendental transformation kernel (fn(k: i64, a: f64, m: i64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(k: i64, a: f64, m: i64) -> f64` | `O(1)` | [`transform/transform_kernel_0fb260`](./transform/transform_kernel_0fb260/README.md) |
+| `transform` | `transform_kernel_148c19` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_148c19`](./transform/transform_kernel_148c19/README.md) |
+| `transform` | `transform_kernel_19274d` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_19274d`](./transform/transform_kernel_19274d/README.md) |
+| `transform` | `transform_kernel_204748` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_204748`](./transform/transform_kernel_204748/README.md) |
+| `transform` | `transform_kernel_21a225` | Pure deterministic transformation kernel (fn(a: f64) -> f64) with O(n) time complexity. | `fn(a: f64) -> f64` | `O(n)` | [`transform/transform_kernel_21a225`](./transform/transform_kernel_21a225/README.md) |
+| `transform` | `transform_kernel_3e4fc2` | Pure deterministic transformation kernel (fn(a: f64) -> f64) with O(n) time complexity. | `fn(a: f64) -> f64` | `O(n)` | [`transform/transform_kernel_3e4fc2`](./transform/transform_kernel_3e4fc2/README.md) |
+| `transform` | `transform_kernel_4b331b` | Nonlinear transcendental transformation kernel (fn(a: f64, b: f64, c: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_4b331b`](./transform/transform_kernel_4b331b/README.md) |
+| `transform` | `transform_kernel_4dd3a7` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_4dd3a7`](./transform/transform_kernel_4dd3a7/README.md) |
+| `transform` | `transform_kernel_5f0f01` | Pure deterministic transformation kernel (fn(xs: &[f64], a: f64) -> i64) with O(n) time complexity. | `fn(xs: &[f64], a: f64) -> i64` | `O(n)` | [`transform/transform_kernel_5f0f01`](./transform/transform_kernel_5f0f01/README.md) |
+| `transform` | `transform_kernel_60e071` | Nonlinear transcendental transformation kernel (fn(a: f64, b: f64, c: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_60e071`](./transform/transform_kernel_60e071/README.md) |
+| `transform` | `transform_kernel_7dd476` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_7dd476`](./transform/transform_kernel_7dd476/README.md) |
+| `transform` | `transform_kernel_7ed09f` | Pure deterministic transformation kernel (fn(a: f64, b: f64, c: f64) -> f64) with O(1) time complexity. | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_7ed09f`](./transform/transform_kernel_7ed09f/README.md) |
+| `transform` | `transform_kernel_8d21a8` | Nonlinear transcendental transformation kernel (fn(a: f64, b: f64, c: f64, d: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64, b: f64, c: f64, d: f64) -> f64` | `O(1)` | [`transform/transform_kernel_8d21a8`](./transform/transform_kernel_8d21a8/README.md) |
+| `transform` | `transform_kernel_8fc1ab` | Pure deterministic transformation kernel (fn(a: f64, b: f64, c: f64) -> f64) with O(1) time complexity. | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_8fc1ab`](./transform/transform_kernel_8fc1ab/README.md) |
+| `transform` | `transform_kernel_a2610d` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_a2610d`](./transform/transform_kernel_a2610d/README.md) |
+| `transform` | `transform_kernel_c7ad70` | Pure deterministic transformation kernel (fn(a: f64) -> f64) with O(1) time complexity. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_c7ad70`](./transform/transform_kernel_c7ad70/README.md) |
+| `transform` | `transform_kernel_c7d018` | Nonlinear transcendental transformation kernel (fn(k: i64, a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(k: i64, a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_c7d018`](./transform/transform_kernel_c7d018/README.md) |
+| `transform` | `transform_kernel_d30945` | Nonlinear transcendental transformation kernel (fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64` | `O(1)` | [`transform/transform_kernel_d30945`](./transform/transform_kernel_d30945/README.md) |
+| `transform` | `transform_kernel_de3a96` | Pure deterministic transformation kernel (fn(xs: &[f64], a: f64) -> f64) with O(1) time complexity. | `fn(xs: &[f64], a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_de3a96`](./transform/transform_kernel_de3a96/README.md) |
+| `transform` | `transform_kernel_e7f214` | Nonlinear transcendental transformation kernel (fn(k: i64, a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(k: i64, a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_e7f214`](./transform/transform_kernel_e7f214/README.md) |
+| `transform` | `transform_kernel_ea4f33` | Trigonometric/periodic transformation kernel (fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64) evaluating smooth angular or wave functions. | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64` | `O(1)` | [`transform/transform_kernel_ea4f33`](./transform/transform_kernel_ea4f33/README.md) |
+| `transform` | `transform_kernel_eb3a6e` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_eb3a6e`](./transform/transform_kernel_eb3a6e/README.md) |
+| `transform` | `transform_kernel_ee9486` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_ee9486`](./transform/transform_kernel_ee9486/README.md) |
+| `transform` | `transform_kernel_f1ea2e` | Pure deterministic transformation kernel (fn(k: i64) -> i64) with O(n) time complexity. | `fn(k: i64) -> i64` | `O(n)` | [`transform/transform_kernel_f1ea2e`](./transform/transform_kernel_f1ea2e/README.md) |
+| `transform` | `transform_kernel_f82f54` | Pure deterministic transformation kernel (fn(a: f64, b: f64, c: f64) -> f64) with O(1) time complexity. | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_f82f54`](./transform/transform_kernel_f82f54/README.md) |
+| `transform` | `transform_kernel_fd4f9f` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_fd4f9f`](./transform/transform_kernel_fd4f9f/README.md) |
 
 ## Citation
 

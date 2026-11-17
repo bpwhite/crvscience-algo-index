@@ -6,6 +6,16 @@
 - **Estimated Complexity**: Time `O(n)`, Space `O(1) auxiliary`
 - **Verification Suite**: `7` shared input/output cases in [`vectors.json`](./vectors.json)
 
+## Description
+
+Computes a scalar similarity, correlation, or distance metric across paired numeric series.
+
+## 3 Real-World Uses
+
+1. Ranking candidate molecular, spectral, or signal profiles against a query signature.
+2. Cross-correlating time-series sensor streams for fault detection and alignment.
+3. Clustering and nearest-neighbor retrieval in high-dimensional feature vectors.
+
 ## Copy-Paste Implementation Files
 
 | Language | Implementation File(s) | Entrypoint Symbol | Standalone Test Command |

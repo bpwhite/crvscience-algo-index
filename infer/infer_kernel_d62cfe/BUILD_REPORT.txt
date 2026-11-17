@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : infer_kernel_d62cfe
-LICENSE                               : GPL-3.0-or-later
+LICENSE                               : GPL-3.0-only
 CATEGORY                              : infer
 STRUCTURAL HASH                       : d62cfe08a51319f0962f95ac
 COMPLEXITY (TIME / SPACE)             : O(n) / O(1) auxiliary
@@ -9,12 +9,12 @@ TEST VECTORS                          : 7 deterministic cases (epsilon = 1.0e-7)
 
 TARGET LANGUAGE      | STATUS               | VECTORS    | BUILD_MS | TEST_MS 
 ------------------------------------------------------------------------
-Rust (2021)          | PASSED               | 7          | 270      | 189     
-C (ISO C11)          | PASSED               | 7          | 548      | 53      
-C++ (ISO C++20)      | PASSED               | 7          | 734      | 68      
-Java (17+)           | PASSED               | 7          | 458      | 55      
-JavaScript (ES2022)  | PASSED               | 7          | 0        | 120     
-Python (3.10+)       | PASSED               | 7          | 57       | 62      
+Rust (2021)          | PASSED               | 7          | 358      | 224     
+C (ISO C11)          | PASSED               | 7          | 275      | 67      
+C++ (ISO C++20)      | PASSED               | 7          | 739      | 80      
+Java (17+)           | PASSED               | 7          | 551      | 58      
+JavaScript (ES2022)  | PASSED               | 7          | 0        | 128     
+Python (3.10+)       | PASSED               | 7          | 54       | 67      
 
 TOOLCHAIN SUMMARY
 - rust: rustc 1.100.0 (0ef1bc386 2026-11-09) [flags: --edition 2021 -O]

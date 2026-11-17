@@ -1,10 +1,20 @@
 # `binary_entropy_422d08`
 
-- **License**: `GPL-3.0-or-later`
+- **License**: `GPL-3.0-only`
 - **Information-Theoretic Category**: `transform/` — Applies deterministic numerical, algebraic, or dynamical operators across state spaces or time steps.
 - **Canonical Signature**: `fn(a: f64) -> f64`
 - **Estimated Complexity**: Time `O(1)`, Space `O(1) auxiliary`
 - **Verification Suite**: `6` shared input/output cases in [`vectors.json`](./vectors.json)
+
+## Description
+
+Computes binary Shannon entropy H2(p) in bits from a Bernoulli probability parameter.
+
+## 3 Real-World Uses
+
+1. Information-theoretic channel capacity and compression bound calculation for binary telemetry streams.
+2. Decision-tree split impurity (Gini/entropy) evaluation in lightweight embedded classifiers.
+3. Cryptographic randomness and bit-bias screening on hardware RNG output.
 
 ## Copy-Paste Implementation Files
 

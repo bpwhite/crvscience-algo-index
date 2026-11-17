@@ -1,10 +1,20 @@
 # `transform_kernel_ea4f33`
 
-- **License**: `GPL-3.0-or-later`
+- **License**: `GPL-3.0-only`
 - **Information-Theoretic Category**: `transform/` — Applies deterministic numerical, algebraic, or dynamical operators across state spaces or time steps.
 - **Canonical Signature**: `fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64`
 - **Estimated Complexity**: Time `O(1)`, Space `O(1) auxiliary`
 - **Verification Suite**: `6` shared input/output cases in [`vectors.json`](./vectors.json)
+
+## Description
+
+Trigonometric/periodic transformation kernel (fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64) evaluating smooth angular or wave functions.
+
+## 3 Real-World Uses
+
+1. Parametric shape synthesis, polar curve evaluation, and CAD/3D mesh generation.
+2. Geospatial bearing, great-circle, and orbital phase calculations.
+3. Harmonic analysis and phase-locked signal processing in DSP pipelines.
 
 ## Copy-Paste Implementation Files
 

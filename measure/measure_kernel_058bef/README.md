@@ -1,10 +1,20 @@
 # `measure_kernel_058bef`
 
-- **License**: `GPL-3.0-or-later`
+- **License**: `GPL-3.0-only`
 - **Information-Theoretic Category**: `measure/` — Compresses one or more high-dimensional structures into a scalar metric, divergence, or entropy summary.
 - **Canonical Signature**: `fn(xs: &[f64], a: f64) -> f64`
 - **Estimated Complexity**: Time `O(n)`, Space `O(1) auxiliary`
 - **Verification Suite**: `7` shared input/output cases in [`vectors.json`](./vectors.json)
+
+## Description
+
+Scalar measurement kernel (fn(xs: &[f64], a: f64) -> f64) reducing input arrays or parameters to a summary metric.
+
+## 3 Real-World Uses
+
+1. Computing quality-of-fit, error norms, or divergence scores in scientific simulations.
+2. Real-time telemetry aggregation and threshold alerting on streaming measurements.
+3. Feature extraction for downstream classification and anomaly-detection models.
 
 ## Copy-Paste Implementation Files
 

@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : similarity_0515e4
-LICENSE                               : GPL-3.0-or-later
+LICENSE                               : GPL-3.0-only
 CATEGORY                              : infer
 STRUCTURAL HASH                       : 0515e453d63158235e0580da
 COMPLEXITY (TIME / SPACE)             : O(n) / O(1) auxiliary
@@ -9,12 +9,12 @@ TEST VECTORS                          : 7 deterministic cases (epsilon = 1.0e-7)
 
 TARGET LANGUAGE      | STATUS               | VECTORS    | BUILD_MS | TEST_MS 
 ------------------------------------------------------------------------
-Rust (2021)          | PASSED               | 7          | 296      | 186     
-C (ISO C11)          | PASSED               | 7          | 360      | 46      
-C++ (ISO C++20)      | PASSED               | 7          | 829      | 80      
-Java (17+)           | PASSED               | 7          | 459      | 53      
-JavaScript (ES2022)  | PASSED               | 7          | 0        | 121     
-Python (3.10+)       | PASSED               | 7          | 56       | 58      
+Rust (2021)          | PASSED               | 7          | 322      | 208     
+C (ISO C11)          | PASSED               | 7          | 326      | 91      
+C++ (ISO C++20)      | PASSED               | 7          | 720      | 75      
+Java (17+)           | PASSED               | 7          | 438      | 57      
+JavaScript (ES2022)  | PASSED               | 7          | 0        | 126     
+Python (3.10+)       | PASSED               | 7          | 68       | 76      
 
 TOOLCHAIN SUMMARY
 - rust: rustc 1.100.0 (0ef1bc386 2026-11-09) [flags: --edition 2021 -O]

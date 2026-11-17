@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : transform_kernel_00e218
-LICENSE                               : GPL-3.0-or-later
+LICENSE                               : GPL-3.0-only
 CATEGORY                              : transform
 STRUCTURAL HASH                       : 00e2180f75572bf06f1d4309
 COMPLEXITY (TIME / SPACE)             : O(1) / O(1) auxiliary
@@ -9,12 +9,12 @@ TEST VECTORS                          : 7 deterministic cases (epsilon = 1.0e-7)
 
 TARGET LANGUAGE      | STATUS               | VECTORS    | BUILD_MS | TEST_MS 
 ------------------------------------------------------------------------
-Rust (2021)          | PASSED               | 7          | 296      | 179     
-C (ISO C11)          | PASSED               | 7          | 336      | 59      
-C++ (ISO C++20)      | PASSED               | 7          | 864      | 260     
-Java (17+)           | PASSED               | 7          | 472      | 64      
-JavaScript (ES2022)  | PASSED               | 7          | 0        | 134     
-Python (3.10+)       | PASSED               | 7          | 73       | 61      
+Rust (2021)          | PASSED               | 7          | 272      | 233     
+C (ISO C11)          | PASSED               | 7          | 344      | 60      
+C++ (ISO C++20)      | PASSED               | 7          | 694      | 79      
+Java (17+)           | PASSED               | 7          | 454      | 60      
+JavaScript (ES2022)  | PASSED               | 7          | 0        | 146     
+Python (3.10+)       | PASSED               | 7          | 60       | 55      
 
 TOOLCHAIN SUMMARY
 - rust: rustc 1.100.0 (0ef1bc386 2026-11-09) [flags: --edition 2021 -O]

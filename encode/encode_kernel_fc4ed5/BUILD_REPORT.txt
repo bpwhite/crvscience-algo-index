@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : encode_kernel_fc4ed5
-LICENSE                               : GPL-3.0-or-later
+LICENSE                               : GPL-3.0-only
 CATEGORY                              : encode
 STRUCTURAL HASH                       : fc4ed54c01571ecf450caf09
 COMPLEXITY (TIME / SPACE)             : O(1) / O(1) auxiliary
@@ -9,12 +9,12 @@ TEST VECTORS                          : 6 deterministic cases (epsilon = 1.0e-7)
 
 TARGET LANGUAGE      | STATUS               | VECTORS    | BUILD_MS | TEST_MS 
 ------------------------------------------------------------------------
-Rust (2021)          | PASSED               | 6          | 240      | 224     
-C (ISO C11)          | PASSED               | 6          | 347      | 57      
-C++ (ISO C++20)      | PASSED               | 6          | 603      | 71      
-Java (17+)           | PASSED               | 6          | 507      | 63      
-JavaScript (ES2022)  | PASSED               | 6          | 0        | 134     
-Python (3.10+)       | PASSED               | 6          | 54       | 55      
+Rust (2021)          | PASSED               | 6          | 281      | 236     
+C (ISO C11)          | PASSED               | 6          | 354      | 62      
+C++ (ISO C++20)      | PASSED               | 6          | 652      | 78      
+Java (17+)           | PASSED               | 6          | 421      | 77      
+JavaScript (ES2022)  | PASSED               | 6          | 0        | 132     
+Python (3.10+)       | PASSED               | 6          | 59       | 57      
 
 TOOLCHAIN SUMMARY
 - rust: rustc 1.100.0 (0ef1bc386 2026-11-09) [flags: --edition 2021 -O]

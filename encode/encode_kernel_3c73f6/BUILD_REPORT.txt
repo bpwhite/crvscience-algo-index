@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : encode_kernel_3c73f6
-LICENSE                               : GPL-3.0-or-later
+LICENSE                               : GPL-3.0-only
 CATEGORY                              : encode
 STRUCTURAL HASH                       : 3c73f6105fc3d3c93b4f889b
 COMPLEXITY (TIME / SPACE)             : O(1) / O(1) auxiliary
@@ -9,12 +9,12 @@ TEST VECTORS                          : 6 deterministic cases (epsilon = 1.0e-7)
 
 TARGET LANGUAGE      | STATUS               | VECTORS    | BUILD_MS | TEST_MS 
 ------------------------------------------------------------------------
-Rust (2021)          | PASSED               | 6          | 247      | 202     
-C (ISO C11)          | PASSED               | 6          | 259      | 65      
-C++ (ISO C++20)      | PASSED               | 6          | 635      | 63      
-Java (17+)           | PASSED               | 6          | 422      | 62      
-JavaScript (ES2022)  | PASSED               | 6          | 0        | 125     
-Python (3.10+)       | PASSED               | 6          | 132      | 60      
+Rust (2021)          | PASSED               | 6          | 253      | 226     
+C (ISO C11)          | PASSED               | 6          | 298      | 71      
+C++ (ISO C++20)      | PASSED               | 6          | 648      | 71      
+Java (17+)           | PASSED               | 6          | 431      | 92      
+JavaScript (ES2022)  | PASSED               | 6          | 0        | 153     
+Python (3.10+)       | PASSED               | 6          | 59       | 69      
 
 TOOLCHAIN SUMMARY
 - rust: rustc 1.100.0 (0ef1bc386 2026-11-09) [flags: --edition 2021 -O]

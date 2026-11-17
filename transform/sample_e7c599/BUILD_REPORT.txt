@@ -1,6 +1,6 @@
 ========================================================================
 ALGORITHM BUILD & VERIFICATION REPORT : sample_e7c599
-LICENSE                               : GPL-3.0-or-later
+LICENSE                               : GPL-3.0-only
 CATEGORY                              : transform
 STRUCTURAL HASH                       : e7c599b945bf27f46d0a576d
 COMPLEXITY (TIME / SPACE)             : O(n) / O(1) auxiliary
@@ -9,12 +9,12 @@ TEST VECTORS                          : 6 deterministic cases (epsilon = 1.0e-7)
 
 TARGET LANGUAGE      | STATUS               | VECTORS    | BUILD_MS | TEST_MS 
 ------------------------------------------------------------------------
-Rust (2021)          | PASSED               | 6          | 633      | 195     
-C (ISO C11)          | PASSED               | 6          | 276      | 62      
-C++ (ISO C++20)      | PASSED               | 6          | 646      | 67      
-Java (17+)           | PASSED               | 6          | 441      | 56      
-JavaScript (ES2022)  | PASSED               | 6          | 0        | 136     
-Python (3.10+)       | PASSED               | 6          | 60       | 57      
+Rust (2021)          | PASSED               | 6          | 305      | 174     
+C (ISO C11)          | PASSED               | 6          | 294      | 62      
+C++ (ISO C++20)      | PASSED               | 6          | 612      | 59      
+Java (17+)           | PASSED               | 6          | 446      | 57      
+JavaScript (ES2022)  | PASSED               | 6          | 0        | 128     
+Python (3.10+)       | PASSED               | 6          | 70       | 61      
 
 TOOLCHAIN SUMMARY
 - rust: rustc 1.100.0 (0ef1bc386 2026-11-09) [flags: --edition 2021 -O]

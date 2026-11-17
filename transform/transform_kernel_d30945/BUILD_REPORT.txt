@@ -9,12 +9,12 @@ TEST VECTORS                          : 6 deterministic cases (epsilon = 1.0e-7)
 
 TARGET LANGUAGE      | STATUS               | VECTORS    | BUILD_MS | TEST_MS 
 ------------------------------------------------------------------------
-Rust (2021)          | PASSED               | 6          | 271      | 222     
-C (ISO C11)          | PASSED               | 6          | 295      | 97      
-C++ (ISO C++20)      | PASSED               | 6          | 631      | 63      
-Java (17+)           | PASSED               | 6          | 428      | 61      
-JavaScript (ES2022)  | PASSED               | 6          | 0        | 138     
-Python (3.10+)       | PASSED               | 6          | 62       | 80      
+Rust (2021)          | PASSED               | 6          | 254      | 248     
+C (ISO C11)          | PASSED               | 6          | 300      | 95      
+C++ (ISO C++20)      | PASSED               | 6          | 636      | 66      
+Java (17+)           | PASSED               | 6          | 449      | 60      
+JavaScript (ES2022)  | PASSED               | 6          | 0        | 133     
+Python (3.10+)       | PASSED               | 6          | 63       | 73      
 
 TOOLCHAIN SUMMARY
 - rust: rustc 1.100.0 (0ef1bc386 2026-11-09) [flags: --edition 2021 -O]

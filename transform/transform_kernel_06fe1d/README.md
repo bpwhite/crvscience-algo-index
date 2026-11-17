@@ -1,10 +1,20 @@
 # `transform_kernel_06fe1d`
 
-- **License**: `GPL-3.0-or-later`
+- **License**: `GPL-3.0-only`
 - **Information-Theoretic Category**: `transform/` — Applies deterministic numerical, algebraic, or dynamical operators across state spaces or time steps.
 - **Canonical Signature**: `fn(a: f64, b: f64, c: f64, d: f64, a4: f64) -> f64`
 - **Estimated Complexity**: Time `O(1)`, Space `O(1) auxiliary`
 - **Verification Suite**: `6` shared input/output cases in [`vectors.json`](./vectors.json)
+
+## Description
+
+Pure deterministic transformation kernel (fn(a: f64, b: f64, c: f64, d: f64, a4: f64) -> f64) with O(1) time complexity.
+
+## 3 Real-World Uses
+
+1. Evaluating closed-form physical, financial, or engineering transfer functions.
+2. Deterministic data normalization, clamping, and piecewise interpolation across pipelines.
+3. Cross-language reference verification for safety-critical numeric kernels.
 
 ## Copy-Paste Implementation Files
 
