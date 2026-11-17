@@ -10,6 +10,23 @@
 
 Pure deterministic transformation kernel (fn(xs: &[f64], a: f64) -> i64) with O(n) time complexity.
 
+## Pseudocode
+
+```text
+function transform_kernel(xs: []float, a: float) -> int:
+  v0 <- 0
+  v1 <- 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  for i in 0..len(xs) do
+    v2 <- xs[i]
+    v3 <- abs((v2 - a))
+    if (v3 < v1) then
+      v1 <- v3
+      v0 <- i
+    end if
+  end for
+  return v0
+```
+
 ## 3 Real-World Uses
 
 1. Evaluating closed-form physical, financial, or engineering transfer functions.

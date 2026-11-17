@@ -22,43 +22,92 @@ Self-contained, zero-dependency reference implementations in **Rust, C (C11), C+
 | Category | Algorithm | Function & Description | Canonical Signature | Time Complexity | Path |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `encode` | `encode_kernel_3c73f6` | Deterministic bit-level encoding, packing, or flag-manipulation kernel (fn(k: i64, m: i64, q: i64, p: i64) -> i64) over integer words or buffers. | `fn(k: i64, m: i64, q: i64, p: i64) -> i64` | `O(1)` | [`encode/encode_kernel_3c73f6`](./encode/encode_kernel_3c73f6/README.md) |
-| `encode` | `encode_kernel_fc4ed5` | Deterministic bit-level encoding, packing, or flag-manipulation kernel (fn(k: i64, m: i64, q: i64) -> bool) over integer words or buffers. | `fn(k: i64, m: i64, q: i64) -> bool` | `O(1)` | [`encode/encode_kernel_fc4ed5`](./encode/encode_kernel_fc4ed5/README.md) |
-| `infer` | `infer_kernel_d62cfe` | Statistical/numerical inference kernel (fn(xs: &[f64], ys: &[f64]) -> f64) estimating summary parameters or integrated quantities. | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`infer/infer_kernel_d62cfe`](./infer/infer_kernel_d62cfe/README.md) |
-| `infer` | `infer_kernel_fe85ee` | Statistical/numerical inference kernel (fn(xs: &[f64]) -> f64) estimating summary parameters or integrated quantities. | `fn(xs: &[f64]) -> f64` | `O(n)` | [`infer/infer_kernel_fe85ee`](./infer/infer_kernel_fe85ee/README.md) |
-| `infer` | `similarity_0515e4` | Computes a scalar similarity, correlation, or distance metric across paired numeric series. | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`infer/similarity_0515e4`](./infer/similarity_0515e4/README.md) |
-| `measure` | `measure_kernel_058bef` | Scalar measurement kernel (fn(xs: &[f64], a: f64) -> f64) reducing input arrays or parameters to a summary metric. | `fn(xs: &[f64], a: f64) -> f64` | `O(n)` | [`measure/measure_kernel_058bef`](./measure/measure_kernel_058bef/README.md) |
-| `measure` | `measure_kernel_3a4c71` | Computes a scalar similarity, correlation, or distance metric across paired numeric series. | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_3a4c71`](./measure/measure_kernel_3a4c71/README.md) |
-| `transform` | `binary_entropy_422d08` | Computes binary Shannon entropy H2(p) in bits from a Bernoulli probability parameter. | `fn(a: f64) -> f64` | `O(1)` | [`transform/binary_entropy_422d08`](./transform/binary_entropy_422d08/README.md) |
-| `transform` | `sample_e7c599` | Executes a deterministic parametric or inverse-CDF sampling kernel over scalar/array inputs. | `fn(a: f64, b: f64) -> i64` | `O(n)` | [`transform/sample_e7c599`](./transform/sample_e7c599/README.md) |
-| `transform` | `transform_kernel_00e218` | Pure deterministic transformation kernel (fn(xs: &[f64], a: f64) -> f64) with O(1) time complexity. | `fn(xs: &[f64], a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_00e218`](./transform/transform_kernel_00e218/README.md) |
-| `transform` | `transform_kernel_0198b8` | Trigonometric/periodic transformation kernel (fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64, a6: f64) -> f64) evaluating smooth angular or wave functions. | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64, a6: f64) -> f64` | `O(1)` | [`transform/transform_kernel_0198b8`](./transform/transform_kernel_0198b8/README.md) |
-| `transform` | `transform_kernel_06fe1d` | Pure deterministic transformation kernel (fn(a: f64, b: f64, c: f64, d: f64, a4: f64) -> f64) with O(1) time complexity. | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64) -> f64` | `O(1)` | [`transform/transform_kernel_06fe1d`](./transform/transform_kernel_06fe1d/README.md) |
-| `transform` | `transform_kernel_0fb260` | Nonlinear transcendental transformation kernel (fn(k: i64, a: f64, m: i64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(k: i64, a: f64, m: i64) -> f64` | `O(1)` | [`transform/transform_kernel_0fb260`](./transform/transform_kernel_0fb260/README.md) |
 | `transform` | `transform_kernel_148c19` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_148c19`](./transform/transform_kernel_148c19/README.md) |
 | `transform` | `transform_kernel_19274d` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_19274d`](./transform/transform_kernel_19274d/README.md) |
-| `transform` | `transform_kernel_204748` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_204748`](./transform/transform_kernel_204748/README.md) |
-| `transform` | `transform_kernel_21a225` | Pure deterministic transformation kernel (fn(a: f64) -> f64) with O(n) time complexity. | `fn(a: f64) -> f64` | `O(n)` | [`transform/transform_kernel_21a225`](./transform/transform_kernel_21a225/README.md) |
 | `transform` | `transform_kernel_3e4fc2` | Pure deterministic transformation kernel (fn(a: f64) -> f64) with O(n) time complexity. | `fn(a: f64) -> f64` | `O(n)` | [`transform/transform_kernel_3e4fc2`](./transform/transform_kernel_3e4fc2/README.md) |
-| `transform` | `transform_kernel_4b331b` | Nonlinear transcendental transformation kernel (fn(a: f64, b: f64, c: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_4b331b`](./transform/transform_kernel_4b331b/README.md) |
-| `transform` | `transform_kernel_4dd3a7` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_4dd3a7`](./transform/transform_kernel_4dd3a7/README.md) |
 | `transform` | `transform_kernel_5f0f01` | Pure deterministic transformation kernel (fn(xs: &[f64], a: f64) -> i64) with O(n) time complexity. | `fn(xs: &[f64], a: f64) -> i64` | `O(n)` | [`transform/transform_kernel_5f0f01`](./transform/transform_kernel_5f0f01/README.md) |
-| `transform` | `transform_kernel_60e071` | Nonlinear transcendental transformation kernel (fn(a: f64, b: f64, c: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_60e071`](./transform/transform_kernel_60e071/README.md) |
-| `transform` | `transform_kernel_7dd476` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_7dd476`](./transform/transform_kernel_7dd476/README.md) |
-| `transform` | `transform_kernel_7ed09f` | Pure deterministic transformation kernel (fn(a: f64, b: f64, c: f64) -> f64) with O(1) time complexity. | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_7ed09f`](./transform/transform_kernel_7ed09f/README.md) |
-| `transform` | `transform_kernel_8d21a8` | Nonlinear transcendental transformation kernel (fn(a: f64, b: f64, c: f64, d: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64, b: f64, c: f64, d: f64) -> f64` | `O(1)` | [`transform/transform_kernel_8d21a8`](./transform/transform_kernel_8d21a8/README.md) |
-| `transform` | `transform_kernel_8fc1ab` | Pure deterministic transformation kernel (fn(a: f64, b: f64, c: f64) -> f64) with O(1) time complexity. | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_8fc1ab`](./transform/transform_kernel_8fc1ab/README.md) |
-| `transform` | `transform_kernel_a2610d` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_a2610d`](./transform/transform_kernel_a2610d/README.md) |
-| `transform` | `transform_kernel_c7ad70` | Pure deterministic transformation kernel (fn(a: f64) -> f64) with O(1) time complexity. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_c7ad70`](./transform/transform_kernel_c7ad70/README.md) |
-| `transform` | `transform_kernel_c7d018` | Nonlinear transcendental transformation kernel (fn(k: i64, a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(k: i64, a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_c7d018`](./transform/transform_kernel_c7d018/README.md) |
-| `transform` | `transform_kernel_d30945` | Nonlinear transcendental transformation kernel (fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64` | `O(1)` | [`transform/transform_kernel_d30945`](./transform/transform_kernel_d30945/README.md) |
-| `transform` | `transform_kernel_de3a96` | Pure deterministic transformation kernel (fn(xs: &[f64], a: f64) -> f64) with O(1) time complexity. | `fn(xs: &[f64], a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_de3a96`](./transform/transform_kernel_de3a96/README.md) |
-| `transform` | `transform_kernel_e7f214` | Nonlinear transcendental transformation kernel (fn(k: i64, a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(k: i64, a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_e7f214`](./transform/transform_kernel_e7f214/README.md) |
-| `transform` | `transform_kernel_ea4f33` | Trigonometric/periodic transformation kernel (fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64) evaluating smooth angular or wave functions. | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64` | `O(1)` | [`transform/transform_kernel_ea4f33`](./transform/transform_kernel_ea4f33/README.md) |
-| `transform` | `transform_kernel_eb3a6e` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_eb3a6e`](./transform/transform_kernel_eb3a6e/README.md) |
-| `transform` | `transform_kernel_ee9486` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_ee9486`](./transform/transform_kernel_ee9486/README.md) |
-| `transform` | `transform_kernel_f1ea2e` | Pure deterministic transformation kernel (fn(k: i64) -> i64) with O(n) time complexity. | `fn(k: i64) -> i64` | `O(n)` | [`transform/transform_kernel_f1ea2e`](./transform/transform_kernel_f1ea2e/README.md) |
-| `transform` | `transform_kernel_f82f54` | Pure deterministic transformation kernel (fn(a: f64, b: f64, c: f64) -> f64) with O(1) time complexity. | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_f82f54`](./transform/transform_kernel_f82f54/README.md) |
-| `transform` | `transform_kernel_fd4f9f` | Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves. | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_fd4f9f`](./transform/transform_kernel_fd4f9f/README.md) |
+
+## Algorithm Pseudocode Reference
+
+### `encode_kernel_3c73f6` (`encode` — `fn(k: i64, m: i64, q: i64, p: i64) -> i64`)
+
+Deterministic bit-level encoding, packing, or flag-manipulation kernel (fn(k: i64, m: i64, q: i64, p: i64) -> i64) over integer words or buffers.
+
+```text
+function encode_kernel(k: int, m: int, q: int, p: int) -> int:
+  return (((k | (m << 8)) | (q << 16)) | (p << 24))
+```
+
+### `transform_kernel_148c19` (`transform` — `fn(a: f64) -> f64`)
+
+Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves.
+
+```text
+function transform_kernel(a: float) -> float:
+  v0 <- 0
+  if (a < 0) then
+    v0 <- -(1)
+  else
+    v0 <- 1
+  end if
+  v1 <- abs(a)
+  v2 <- (1 / (1 + (0.3275911 * v1)))
+  v3 <- (v2 * (0.254829592 + (v2 * (-(0.284496736) + (v2 * (1.421413741 + (v2 * (-(1.453152027) + (v2 * 1.061405429)))))))))
+  return (v0 * (1 - (v3 * exp((-(v1) * v1)))))
+```
+
+### `transform_kernel_19274d` (`transform` — `fn(a: f64) -> f64`)
+
+Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves.
+
+```text
+function transform_kernel(a: float) -> float:
+  v0 <- abs(a)
+  v1 <- (1 / (1 + (0.3275911 * v0)))
+  v2 <- (v1 * (0.254829592 + (v1 * (-(0.284496736) + (v1 * (1.421413741 + (v1 * (-(1.453152027) + (v1 * 1.061405429)))))))))
+  v3 <- (v2 * exp((-(v0) * v0)))
+  if (a >= 0) then
+    return v3
+  else
+    return (2 - v3)
+  end if
+```
+
+### `transform_kernel_3e4fc2` (`transform` — `fn(a: f64) -> f64`)
+
+Pure deterministic transformation kernel (fn(a: f64) -> f64) with O(n) time complexity.
+
+```text
+function transform_kernel(a: float) -> float:
+  v0 <- a
+  while (v0 > 180) do
+    v0 <- (v0 - 360)
+  end while
+  while (v0 < -(180)) do
+    v0 <- (v0 + 360)
+  end while
+  return v0
+```
+
+### `transform_kernel_5f0f01` (`transform` — `fn(xs: &[f64], a: f64) -> i64`)
+
+Pure deterministic transformation kernel (fn(xs: &[f64], a: f64) -> i64) with O(n) time complexity.
+
+```text
+function transform_kernel(xs: []float, a: float) -> int:
+  v0 <- 0
+  v1 <- 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  for i in 0..len(xs) do
+    v2 <- xs[i]
+    v3 <- abs((v2 - a))
+    if (v3 < v1) then
+      v1 <- v3
+      v0 <- i
+    end if
+  end for
+  return v0
+```
+
 
 ## Citation
 

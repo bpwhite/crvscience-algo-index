@@ -10,6 +10,20 @@
 
 Pure deterministic transformation kernel (fn(a: f64) -> f64) with O(n) time complexity.
 
+## Pseudocode
+
+```text
+function transform_kernel(a: float) -> float:
+  v0 <- a
+  while (v0 > 180) do
+    v0 <- (v0 - 360)
+  end while
+  while (v0 < -(180)) do
+    v0 <- (v0 + 360)
+  end while
+  return v0
+```
+
 ## 3 Real-World Uses
 
 1. Evaluating closed-form physical, financial, or engineering transfer functions.

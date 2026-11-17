@@ -10,6 +10,21 @@
 
 Nonlinear transcendental transformation kernel (fn(a: f64) -> f64) computing smooth activation, decay, or likelihood curves.
 
+## Pseudocode
+
+```text
+function transform_kernel(a: float) -> float:
+  v0 <- abs(a)
+  v1 <- (1 / (1 + (0.3275911 * v0)))
+  v2 <- (v1 * (0.254829592 + (v1 * (-(0.284496736) + (v1 * (1.421413741 + (v1 * (-(1.453152027) + (v1 * 1.061405429)))))))))
+  v3 <- (v2 * exp((-(v0) * v0)))
+  if (a >= 0) then
+    return v3
+  else
+    return (2 - v3)
+  end if
+```
+
 ## 3 Real-World Uses
 
 1. Logistic/sigmoid probability mapping and log-sum-exp stabilization in statistical and ML inference.

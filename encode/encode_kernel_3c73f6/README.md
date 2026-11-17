@@ -10,6 +10,13 @@
 
 Deterministic bit-level encoding, packing, or flag-manipulation kernel (fn(k: i64, m: i64, q: i64, p: i64) -> i64) over integer words or buffers.
 
+## Pseudocode
+
+```text
+function encode_kernel(k: int, m: int, q: int, p: int) -> int:
+  return (((k | (m << 8)) | (q << 16)) | (p << 24))
+```
+
 ## 3 Real-World Uses
 
 1. Compact bitset indexing and flag storage in high-throughput parsers and state engines.
