@@ -1,8 +1,8 @@
-# Polyglot Algorithm Catalog (GPL-3.0-or-later)
+# Polyglot Algorithm Catalog (GPL-3.0-only)
 
 Self-contained, zero-dependency reference implementations in **Rust, C (C11), C++ (C++20), Java (17+), JavaScript (ES2022), and Python (3.10+)**, harvested exclusively from **GNU GPL v3** sources, organized along an information-theoretic taxonomy, and verified against shared input/output test vectors (`vectors.json`).
 
-- **License**: GNU General Public License v3.0 (`SPDX-License-Identifier: GPL-3.0-or-later`)
+- **License**: GNU General Public License v3.0 (`SPDX-License-Identifier: GPL-3.0-only`)
 - **Source & Citation**: [CRV Science Apps](https://crvscience.com/apps) (`https://crvscience.com/apps`)
 
 ## Information-Theoretic Directory Structure
@@ -31,12 +31,20 @@ Self-contained, zero-dependency reference implementations in **Rust, C (C11), C+
 | `infer` | `infer_kernel_fe85ee` | `fn(xs: &[f64]) -> f64` | `O(n)` | [`infer/infer_kernel_fe85ee`](./infer/infer_kernel_fe85ee/README.md) |
 | `infer` | `similarity_0515e4` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`infer/similarity_0515e4`](./infer/similarity_0515e4/README.md) |
 | `measure` | `measure_kernel_058bef` | `fn(xs: &[f64], a: f64) -> f64` | `O(n)` | [`measure/measure_kernel_058bef`](./measure/measure_kernel_058bef/README.md) |
+| `measure` | `measure_kernel_1a673c` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_1a673c`](./measure/measure_kernel_1a673c/README.md) |
+| `measure` | `measure_kernel_2ac41f` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_2ac41f`](./measure/measure_kernel_2ac41f/README.md) |
+| `measure` | `measure_kernel_3548e5` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_3548e5`](./measure/measure_kernel_3548e5/README.md) |
+| `measure` | `measure_kernel_3a4c71` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_3a4c71`](./measure/measure_kernel_3a4c71/README.md) |
+| `measure` | `measure_kernel_9139c8` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_9139c8`](./measure/measure_kernel_9139c8/README.md) |
+| `measure` | `measure_kernel_abc537` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_abc537`](./measure/measure_kernel_abc537/README.md) |
+| `measure` | `measure_kernel_b81f82` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`measure/measure_kernel_b81f82`](./measure/measure_kernel_b81f82/README.md) |
 | `project` | `project_kernel_bf2c3c` | `fn(k: i64, a: f64, m: i64) -> f64` | `O(n^2)` | [`project/project_kernel_bf2c3c`](./project/project_kernel_bf2c3c/README.md) |
 | `transform` | `binary_entropy_422d08` | `fn(a: f64) -> f64` | `O(1)` | [`transform/binary_entropy_422d08`](./transform/binary_entropy_422d08/README.md) |
 | `transform` | `kl_eaaab1` | `fn(xs: &[f64], ys: &[f64]) -> f64` | `O(n)` | [`transform/kl_eaaab1`](./transform/kl_eaaab1/README.md) |
 | `transform` | `sample_21e941` | `fn(a: f64, b: f64) -> i64` | `O(n)` | [`transform/sample_21e941`](./transform/sample_21e941/README.md) |
 | `transform` | `sample_e7c599` | `fn(a: f64, b: f64) -> i64` | `O(n)` | [`transform/sample_e7c599`](./transform/sample_e7c599/README.md) |
 | `transform` | `shannon_entropy_4caa92` | `fn(xs: &[i64]) -> f64` | `O(n)` | [`transform/shannon_entropy_4caa92`](./transform/shannon_entropy_4caa92/README.md) |
+| `transform` | `shannon_entropy_6a869d` | `fn(xs: &[i64]) -> f64` | `O(n)` | [`transform/shannon_entropy_6a869d`](./transform/shannon_entropy_6a869d/README.md) |
 | `transform` | `transform_kernel_00e218` | `fn(xs: &[f64], a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_00e218`](./transform/transform_kernel_00e218/README.md) |
 | `transform` | `transform_kernel_0198b8` | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64, a6: f64) -> f64` | `O(1)` | [`transform/transform_kernel_0198b8`](./transform/transform_kernel_0198b8/README.md) |
 | `transform` | `transform_kernel_06fe1d` | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64) -> f64` | `O(1)` | [`transform/transform_kernel_06fe1d`](./transform/transform_kernel_06fe1d/README.md) |
@@ -63,9 +71,11 @@ Self-contained, zero-dependency reference implementations in **Rust, C (C11), C+
 | `transform` | `transform_kernel_83db4a` | `fn(a: f64, b: f64) -> f64` | `O(1)` | [`transform/transform_kernel_83db4a`](./transform/transform_kernel_83db4a/README.md) |
 | `transform` | `transform_kernel_8d21a8` | `fn(a: f64, b: f64, c: f64, d: f64) -> f64` | `O(1)` | [`transform/transform_kernel_8d21a8`](./transform/transform_kernel_8d21a8/README.md) |
 | `transform` | `transform_kernel_8fc1ab` | `fn(a: f64, b: f64, c: f64) -> f64` | `O(1)` | [`transform/transform_kernel_8fc1ab`](./transform/transform_kernel_8fc1ab/README.md) |
+| `transform` | `transform_kernel_a2610d` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_a2610d`](./transform/transform_kernel_a2610d/README.md) |
 | `transform` | `transform_kernel_ad0a52` | `fn(k: i64, m: i64, q: i64) -> f64` | `O(1)` | [`transform/transform_kernel_ad0a52`](./transform/transform_kernel_ad0a52/README.md) |
 | `transform` | `transform_kernel_c7ad70` | `fn(a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_c7ad70`](./transform/transform_kernel_c7ad70/README.md) |
 | `transform` | `transform_kernel_c7d018` | `fn(k: i64, a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_c7d018`](./transform/transform_kernel_c7d018/README.md) |
+| `transform` | `transform_kernel_d30945` | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64` | `O(1)` | [`transform/transform_kernel_d30945`](./transform/transform_kernel_d30945/README.md) |
 | `transform` | `transform_kernel_de3a96` | `fn(xs: &[f64], a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_de3a96`](./transform/transform_kernel_de3a96/README.md) |
 | `transform` | `transform_kernel_e7f214` | `fn(k: i64, a: f64) -> f64` | `O(1)` | [`transform/transform_kernel_e7f214`](./transform/transform_kernel_e7f214/README.md) |
 | `transform` | `transform_kernel_ea4f33` | `fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64` | `O(1)` | [`transform/transform_kernel_ea4f33`](./transform/transform_kernel_ea4f33/README.md) |
