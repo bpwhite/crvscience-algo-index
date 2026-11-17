@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: GPL-3.0-only
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { lz76Complexity } from './algo.mjs';
+
+const suite = JSON.parse(fs.readFileSync(new URL('../vectors.json', import.meta.url), 'utf8'));
+
+test('lz76_complexity_03627b matches all canonical vectors', () => {
+  for (const c of suite.cases) {
+    const args = c.inputs.map((inp) => Array.isArray(inp.value) ? [...inp.value] : inp.value);
+    const got = lz76Complexity(...args);
+    assert.equal(got, c.expected_return.value, c.label);
+  }
+});

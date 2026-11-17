@@ -1,0 +1,51 @@
+# `gauss2_d30945`
+
+- **License**: `GPL-3.0-only`
+- **Information-Theoretic Category**: `transform/` — Applies deterministic numerical, algebraic, or dynamical operators across state spaces or time steps.
+- **Canonical Signature**: `fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64`
+- **Estimated Complexity**: Time `O(1)`, Space `O(1) auxiliary`
+- **Verification Suite**: `6` shared input/output cases in [`vectors.json`](./vectors.json)
+
+## Description
+
+Nonlinear transcendental transformation kernel (fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64) computing smooth activation, decay, or likelihood curves.
+
+## Pseudocode
+
+```text
+function gauss2(a: float, b: float, c: float, d: float, a4: float, a5: float) -> float:
+  v0 <- (b - d)
+  if (v0 > 180) then
+    v0 <- (v0 - 360)
+  else
+    if (v0 < -(180)) then
+      v0 <- (v0 + 360)
+    end if
+  end if
+  v1 <- ((a - c) / a4)
+  v2 <- (v0 / a5)
+  return exp(-(((v1 * v1) + (v2 * v2))))
+```
+
+## 3 Real-World Uses
+
+1. Logistic/sigmoid probability mapping and log-sum-exp stabilization in statistical and ML inference.
+2. Physical decay, diffusion, and reaction-kinetics modeling in scientific computing.
+3. Dynamic range compression and gain control in audio and sensor signal processing.
+
+## Copy-Paste Implementation Files
+
+| Language | Implementation File(s) | Entrypoint Symbol | Standalone Test Command |
+| :--- | :--- | :--- | :--- |
+| Rust (2021) | `rust/algo.rs` | `gauss2` | `make test-rust` |
+| C (C11) | `c/algo.h`, `c/algo.c` | `gauss2` | `make test-c` |
+| C++ (C++20) | `cpp/algo.hpp`, `cpp/algo.cpp` | `algo::gauss2` | `make test-cpp` |
+| Java (17+) | `java/Algo.java` | `Algo.gauss2` | `make test-java` |
+| JavaScript (ES2022) | `js/algo.mjs` | `gauss2` | `make test-js` |
+| Python (3.10+) | `python/algo.py` | `gauss2` | `make test-python` |
+
+## Build & Test All Installed Toolchains
+
+```sh
+make test
+```

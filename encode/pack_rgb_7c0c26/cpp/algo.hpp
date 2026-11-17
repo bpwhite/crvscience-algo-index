@@ -1,0 +1,8 @@
+// SPDX-License-Identifier: GPL-3.0-only
+#pragma once
+#include <cstdint>
+#include <span>
+
+namespace algo {
+int64_t pack_rgb(int64_t k, int64_t m, int64_t q);
+} // namespace algo

@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: GPL-3.0-only
+#include "algo.h"
+#include <math.h>
+#include <stdlib.h>
+
+static inline int64_t algo_min_i64(int64_t a, int64_t b) { return a < b ? a : b; }
+static inline int64_t algo_max_i64(int64_t a, int64_t b) { return a > b ? a : b; }
+
+double saturation(double a) {
+    double v0 = ((fmin(fmax(a, 0.0), 40.0)) + (273.15));
+    double v1 = (((((((((-(139.34411))) + (((157570.100000000006) / (v0))))) - (((66423080.0) / (((v0) * (v0))))))) + (((12438000000.0) / (((((v0) * (v0))) * (v0))))))) - (((862194900000.0) / (((((((v0) * (v0))) * (v0))) * (v0))))));
+    return exp(v1);
+}

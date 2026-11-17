@@ -1,0 +1,187 @@
+{
+  "canonical_slug": "catmull_rom_1d_06fe1d",
+  "category": "transform",
+  "epsilon": 1e-7,
+  "cases": [
+    {
+      "label": "singleton_unit",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.25
+        },
+        {
+          "kind": "f64",
+          "value": 0.5
+        },
+        {
+          "kind": "f64",
+          "value": 0.85
+        },
+        {
+          "kind": "f64",
+          "value": 1.2
+        },
+        {
+          "kind": "f64",
+          "value": 0.15
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 0.54708125
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "ascending_ordered_5",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.5
+        },
+        {
+          "kind": "f64",
+          "value": 0.85
+        },
+        {
+          "kind": "f64",
+          "value": 1.2
+        },
+        {
+          "kind": "f64",
+          "value": 0.15
+        },
+        {
+          "kind": "f64",
+          "value": 0.65
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 1.1810124999999998
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "descending_ordered_6",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.85
+        },
+        {
+          "kind": "f64",
+          "value": 1.2
+        },
+        {
+          "kind": "f64",
+          "value": 0.15
+        },
+        {
+          "kind": "f64",
+          "value": 0.65
+        },
+        {
+          "kind": "f64",
+          "value": 0.35
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 0.874303125
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "mixed_duplicates_7",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 1.2
+        },
+        {
+          "kind": "f64",
+          "value": 0.15
+        },
+        {
+          "kind": "f64",
+          "value": 0.65
+        },
+        {
+          "kind": "f64",
+          "value": 0.35
+        },
+        {
+          "kind": "f64",
+          "value": 0.25
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 0.184765625
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "uniform_distribution_4",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.15
+        },
+        {
+          "kind": "f64",
+          "value": 0.65
+        },
+        {
+          "kind": "f64",
+          "value": 0.35
+        },
+        {
+          "kind": "f64",
+          "value": 0.25
+        },
+        {
+          "kind": "f64",
+          "value": 0.5
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 0.5375000000000001
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "pseudo_random_prime_11",
+      "inputs": [
+        {
+          "kind": "f64",
+          "value": 0.65
+        },
+        {
+          "kind": "f64",
+          "value": 0.35
+        },
+        {
+          "kind": "f64",
+          "value": 0.25
+        },
+        {
+          "kind": "f64",
+          "value": 0.5
+        },
+        {
+          "kind": "f64",
+          "value": 0.85
+        }
+      ],
+      "expected_return": {
+        "kind": "f64",
+        "value": 0.2441218749999999
+      },
+      "expected_mut_slices": {}
+    }
+  ]
+}

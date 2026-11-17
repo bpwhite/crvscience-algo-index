@@ -1,0 +1,91 @@
+{
+  "canonical_slug": "limit_f1ea2e",
+  "category": "transform",
+  "epsilon": 1e-7,
+  "cases": [
+    {
+      "label": "singleton_unit",
+      "inputs": [
+        {
+          "kind": "i64",
+          "value": 2
+        }
+      ],
+      "expected_return": {
+        "kind": "i64",
+        "value": 3
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "ascending_ordered_5",
+      "inputs": [
+        {
+          "kind": "i64",
+          "value": 5
+        }
+      ],
+      "expected_return": {
+        "kind": "i64",
+        "value": 3
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "descending_ordered_6",
+      "inputs": [
+        {
+          "kind": "i64",
+          "value": 9
+        }
+      ],
+      "expected_return": {
+        "kind": "i64",
+        "value": 3
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "mixed_duplicates_7",
+      "inputs": [
+        {
+          "kind": "i64",
+          "value": 4
+        }
+      ],
+      "expected_return": {
+        "kind": "i64",
+        "value": 3
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "uniform_distribution_4",
+      "inputs": [
+        {
+          "kind": "i64",
+          "value": 7
+        }
+      ],
+      "expected_return": {
+        "kind": "i64",
+        "value": 3
+      },
+      "expected_mut_slices": {}
+    },
+    {
+      "label": "pseudo_random_prime_11",
+      "inputs": [
+        {
+          "kind": "i64",
+          "value": 12
+        }
+      ],
+      "expected_return": {
+        "kind": "i64",
+        "value": 3
+      },
+      "expected_mut_slices": {}
+    }
+  ]
+}
