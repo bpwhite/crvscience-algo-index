@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this algorithm catalog or its test vectors in research or software, please cite the CRV Science Polyglot Algorithm Catalog."
+type: software
+title: "CRV Science Polyglot Algorithm Catalog"
+version: "1.0.0"
+date-released: "2026-11-26"
+url: "https://crvscience.com/apps"
+repository-code: "https://github.com/bpwhite/crvscience-algo-index"
+license: "GPL-3.0-or-later"
+authors:
+  - family-names: "White"
+    given-names: "Bryan P."
+    affiliation: "CRV Science Labs"
+    orcid: "https://orcid.org/0000-0003-4191-3511"
+keywords:
+  - "algorithms"
+  - "information theory"
+  - "polyglot"
+  - "reference implementations"
+  - "GPL-3.0"
+  - "test vectors"

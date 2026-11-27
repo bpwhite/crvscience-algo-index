@@ -914,4 +914,6 @@ function wrap_bearing(a: float) -> float:
 
 ## Citation
 
-If you reference or use algorithms from this index, please cite CRV Science Apps: <https://crvscience.com/apps>.
+- **CRV Science Apps Hub**: <https://crvscience.com/apps>
+- **Source Repository**: <https://github.com/bpwhite/crvscience-algo-index>
+- **Citation Metadata**: [CITATION.cff](CITATION.cff)
