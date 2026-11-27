@@ -1,0 +1,861 @@
+{
+  "schema_version": "1.0",
+  "repository": "crvscience-algo-index",
+  "license": "GPL-3.0-only",
+  "algorithm_count": 47,
+  "categories": {
+    "encode": 3,
+    "infer": 3,
+    "measure": 2,
+    "select": 1,
+    "transform": 38
+  },
+  "algorithms": [
+    {
+      "canonical_slug": "has_bit64_fc4ed5",
+      "category": "encode",
+      "signature": "fn(k: i64, m: i64, q: i64) -> bool",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "encode/has_bit64_fc4ed5",
+      "readme_path": "encode/has_bit64_fc4ed5/README.md",
+      "vectors_path": "encode/has_bit64_fc4ed5/vectors.json"
+    },
+    {
+      "canonical_slug": "pack_rgb_7c0c26",
+      "category": "encode",
+      "signature": "fn(k: i64, m: i64, q: i64) -> i64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "encode/pack_rgb_7c0c26",
+      "readme_path": "encode/pack_rgb_7c0c26/README.md",
+      "vectors_path": "encode/pack_rgb_7c0c26/vectors.json"
+    },
+    {
+      "canonical_slug": "pack_rgba_u32_3c73f6",
+      "category": "encode",
+      "signature": "fn(k: i64, m: i64, q: i64, p: i64) -> i64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "encode/pack_rgba_u32_3c73f6",
+      "readme_path": "encode/pack_rgba_u32_3c73f6/README.md",
+      "vectors_path": "encode/pack_rgba_u32_3c73f6/vectors.json"
+    },
+    {
+      "canonical_slug": "raggedness_freqs_fe85ee",
+      "category": "infer",
+      "signature": "fn(xs: &[f64]) -> f64",
+      "complexity": "Time `O(n)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 7,
+      "relative_path": "infer/raggedness_freqs_fe85ee",
+      "readme_path": "infer/raggedness_freqs_fe85ee/README.md",
+      "vectors_path": "infer/raggedness_freqs_fe85ee/vectors.json"
+    },
+    {
+      "canonical_slug": "similarity_0515e4",
+      "category": "infer",
+      "signature": "fn(xs: &[f64], ys: &[f64]) -> f64",
+      "complexity": "Time `O(n)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 7,
+      "relative_path": "infer/similarity_0515e4",
+      "readme_path": "infer/similarity_0515e4/README.md",
+      "vectors_path": "infer/similarity_0515e4/vectors.json"
+    },
+    {
+      "canonical_slug": "trapezoidal_auc_d62cfe",
+      "category": "infer",
+      "signature": "fn(xs: &[f64], ys: &[f64]) -> f64",
+      "complexity": "Time `O(n)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 7,
+      "relative_path": "infer/trapezoidal_auc_d62cfe",
+      "readme_path": "infer/trapezoidal_auc_d62cfe/README.md",
+      "vectors_path": "infer/trapezoidal_auc_d62cfe/vectors.json"
+    },
+    {
+      "canonical_slug": "pearson_corr_3a4c71",
+      "category": "measure",
+      "signature": "fn(xs: &[f64], ys: &[f64]) -> f64",
+      "complexity": "Time `O(n)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 7,
+      "relative_path": "measure/pearson_corr_3a4c71",
+      "readme_path": "measure/pearson_corr_3a4c71/README.md",
+      "vectors_path": "measure/pearson_corr_3a4c71/vectors.json"
+    },
+    {
+      "canonical_slug": "zwanzig_fep_058bef",
+      "category": "measure",
+      "signature": "fn(xs: &[f64], a: f64) -> f64",
+      "complexity": "Time `O(n)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 7,
+      "relative_path": "measure/zwanzig_fep_058bef",
+      "readme_path": "measure/zwanzig_fep_058bef/README.md",
+      "vectors_path": "measure/zwanzig_fep_058bef/vectors.json"
+    },
+    {
+      "canonical_slug": "lz76_complexity_03627b",
+      "category": "select",
+      "signature": "fn(xs: &[i64]) -> i64",
+      "complexity": "Time `O(log n) / O(n)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 7,
+      "relative_path": "select/lz76_complexity_03627b",
+      "readme_path": "select/lz76_complexity_03627b/README.md",
+      "vectors_path": "select/lz76_complexity_03627b/vectors.json"
+    },
+    {
+      "canonical_slug": "aicc_0fb260",
+      "category": "transform",
+      "signature": "fn(k: i64, a: f64, m: i64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/aicc_0fb260",
+      "readme_path": "transform/aicc_0fb260/README.md",
+      "vectors_path": "transform/aicc_0fb260/vectors.json"
+    },
+    {
+      "canonical_slug": "approx_erf_204748",
+      "category": "transform",
+      "signature": "fn(a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/approx_erf_204748",
+      "readme_path": "transform/approx_erf_204748/README.md",
+      "vectors_path": "transform/approx_erf_204748/vectors.json"
+    },
+    {
+      "canonical_slug": "bessel_i0_21a225",
+      "category": "transform",
+      "signature": "fn(a: f64) -> f64",
+      "complexity": "Time `O(n)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/bessel_i0_21a225",
+      "readme_path": "transform/bessel_i0_21a225/README.md",
+      "vectors_path": "transform/bessel_i0_21a225/vectors.json"
+    },
+    {
+      "canonical_slug": "binary_entropy_422d08",
+      "category": "transform",
+      "signature": "fn(a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/binary_entropy_422d08",
+      "readme_path": "transform/binary_entropy_422d08/README.md",
+      "vectors_path": "transform/binary_entropy_422d08/vectors.json"
+    },
+    {
+      "canonical_slug": "bits_e75909",
+      "category": "transform",
+      "signature": "fn(a: f64, b: f64, c: f64, k: i64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/bits_e75909",
+      "readme_path": "transform/bits_e75909/README.md",
+      "vectors_path": "transform/bits_e75909/vectors.json"
+    },
+    {
+      "canonical_slug": "catmull_rom_1d_06fe1d",
+      "category": "transform",
+      "signature": "fn(a: f64, b: f64, c: f64, d: f64, a4: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/catmull_rom_1d_06fe1d",
+      "readme_path": "transform/catmull_rom_1d_06fe1d/README.md",
+      "vectors_path": "transform/catmull_rom_1d_06fe1d/vectors.json"
+    },
+    {
+      "canonical_slug": "density_f82f54",
+      "category": "transform",
+      "signature": "fn(a: f64, b: f64, c: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/density_f82f54",
+      "readme_path": "transform/density_f82f54/README.md",
+      "vectors_path": "transform/density_f82f54/vectors.json"
+    },
+    {
+      "canonical_slug": "equivalent_potential_temp_4b331b",
+      "category": "transform",
+      "signature": "fn(a: f64, b: f64, c: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/equivalent_potential_temp_4b331b",
+      "readme_path": "transform/equivalent_potential_temp_4b331b/README.md",
+      "vectors_path": "transform/equivalent_potential_temp_4b331b/vectors.json"
+    },
+    {
+      "canonical_slug": "erf_approx_148c19",
+      "category": "transform",
+      "signature": "fn(a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/erf_approx_148c19",
+      "readme_path": "transform/erf_approx_148c19/README.md",
+      "vectors_path": "transform/erf_approx_148c19/vectors.json"
+    },
+    {
+      "canonical_slug": "erf_approx_7dd476",
+      "category": "transform",
+      "signature": "fn(a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/erf_approx_7dd476",
+      "readme_path": "transform/erf_approx_7dd476/README.md",
+      "vectors_path": "transform/erf_approx_7dd476/vectors.json"
+    },
+    {
+      "canonical_slug": "erfc_approx_19274d",
+      "category": "transform",
+      "signature": "fn(a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/erfc_approx_19274d",
+      "readme_path": "transform/erfc_approx_19274d/README.md",
+      "vectors_path": "transform/erfc_approx_19274d/vectors.json"
+    },
+    {
+      "canonical_slug": "gauss2_d30945",
+      "category": "transform",
+      "signature": "fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/gauss2_d30945",
+      "readme_path": "transform/gauss2_d30945/README.md",
+      "vectors_path": "transform/gauss2_d30945/vectors.json"
+    },
+    {
+      "canonical_slug": "gielis_superformula_0198b8",
+      "category": "transform",
+      "signature": "fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64, a6: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/gielis_superformula_0198b8",
+      "readme_path": "transform/gielis_superformula_0198b8/README.md",
+      "vectors_path": "transform/gielis_superformula_0198b8/vectors.json"
+    },
+    {
+      "canonical_slug": "limit_f1ea2e",
+      "category": "transform",
+      "signature": "fn(k: i64) -> i64",
+      "complexity": "Time `O(n)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/limit_f1ea2e",
+      "readme_path": "transform/limit_f1ea2e/README.md",
+      "vectors_path": "transform/limit_f1ea2e/vectors.json"
+    },
+    {
+      "canonical_slug": "migration_fraction_e7f214",
+      "category": "transform",
+      "signature": "fn(k: i64, a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/migration_fraction_e7f214",
+      "readme_path": "transform/migration_fraction_e7f214/README.md",
+      "vectors_path": "transform/migration_fraction_e7f214/vectors.json"
+    },
+    {
+      "canonical_slug": "nearest_rung_index_5f0f01",
+      "category": "transform",
+      "signature": "fn(xs: &[f64], a: f64) -> i64",
+      "complexity": "Time `O(n)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 7,
+      "relative_path": "transform/nearest_rung_index_5f0f01",
+      "readme_path": "transform/nearest_rung_index_5f0f01/README.md",
+      "vectors_path": "transform/nearest_rung_index_5f0f01/vectors.json"
+    },
+    {
+      "canonical_slug": "normal_two_tailed_pvalue_ee9486",
+      "category": "transform",
+      "signature": "fn(a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/normal_two_tailed_pvalue_ee9486",
+      "readme_path": "transform/normal_two_tailed_pvalue_ee9486/README.md",
+      "vectors_path": "transform/normal_two_tailed_pvalue_ee9486/vectors.json"
+    },
+    {
+      "canonical_slug": "percentile_sorted_de3a96",
+      "category": "transform",
+      "signature": "fn(xs: &[f64], a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 7,
+      "relative_path": "transform/percentile_sorted_de3a96",
+      "readme_path": "transform/percentile_sorted_de3a96/README.md",
+      "vectors_path": "transform/percentile_sorted_de3a96/vectors.json"
+    },
+    {
+      "canonical_slug": "poisson_llr_60e071",
+      "category": "transform",
+      "signature": "fn(a: f64, b: f64, c: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/poisson_llr_60e071",
+      "readme_path": "transform/poisson_llr_60e071/README.md",
+      "vectors_path": "transform/poisson_llr_60e071/vectors.json"
+    },
+    {
+      "canonical_slug": "probit_norm_cdf_4dd3a7",
+      "category": "transform",
+      "signature": "fn(a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/probit_norm_cdf_4dd3a7",
+      "readme_path": "transform/probit_norm_cdf_4dd3a7/README.md",
+      "vectors_path": "transform/probit_norm_cdf_4dd3a7/vectors.json"
+    },
+    {
+      "canonical_slug": "probit_norm_cdf_a2610d",
+      "category": "transform",
+      "signature": "fn(a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/probit_norm_cdf_a2610d",
+      "readme_path": "transform/probit_norm_cdf_a2610d/README.md",
+      "vectors_path": "transform/probit_norm_cdf_a2610d/vectors.json"
+    },
+    {
+      "canonical_slug": "qkd_secret_bits_sifted_c7d018",
+      "category": "transform",
+      "signature": "fn(k: i64, a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/qkd_secret_bits_sifted_c7d018",
+      "readme_path": "transform/qkd_secret_bits_sifted_c7d018/README.md",
+      "vectors_path": "transform/qkd_secret_bits_sifted_c7d018/vectors.json"
+    },
+    {
+      "canonical_slug": "ramp_maximize_7ed09f",
+      "category": "transform",
+      "signature": "fn(a: f64, b: f64, c: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/ramp_maximize_7ed09f",
+      "readme_path": "transform/ramp_maximize_7ed09f/README.md",
+      "vectors_path": "transform/ramp_maximize_7ed09f/vectors.json"
+    },
+    {
+      "canonical_slug": "ramp_minimize_8fc1ab",
+      "category": "transform",
+      "signature": "fn(a: f64, b: f64, c: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/ramp_minimize_8fc1ab",
+      "readme_path": "transform/ramp_minimize_8fc1ab/README.md",
+      "vectors_path": "transform/ramp_minimize_8fc1ab/vectors.json"
+    },
+    {
+      "canonical_slug": "sample_poisson_icdf_e7c599",
+      "category": "transform",
+      "signature": "fn(a: f64, b: f64) -> i64",
+      "complexity": "Time `O(n)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/sample_poisson_icdf_e7c599",
+      "readme_path": "transform/sample_poisson_icdf_e7c599/README.md",
+      "vectors_path": "transform/sample_poisson_icdf_e7c599/vectors.json"
+    },
+    {
+      "canonical_slug": "saturation_eb3a6e",
+      "category": "transform",
+      "signature": "fn(a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/saturation_eb3a6e",
+      "readme_path": "transform/saturation_eb3a6e/README.md",
+      "vectors_path": "transform/saturation_eb3a6e/vectors.json"
+    },
+    {
+      "canonical_slug": "shannon_entropy_bits_6a869d",
+      "category": "transform",
+      "signature": "fn(xs: &[i64]) -> f64",
+      "complexity": "Time `O(n)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 7,
+      "relative_path": "transform/shannon_entropy_bits_6a869d",
+      "readme_path": "transform/shannon_entropy_bits_6a869d/README.md",
+      "vectors_path": "transform/shannon_entropy_bits_6a869d/vectors.json"
+    },
+    {
+      "canonical_slug": "sigmoid_3a740f",
+      "category": "transform",
+      "signature": "fn(a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/sigmoid_3a740f",
+      "readme_path": "transform/sigmoid_3a740f/README.md",
+      "vectors_path": "transform/sigmoid_3a740f/vectors.json"
+    },
+    {
+      "canonical_slug": "sorted_quantile_00e218",
+      "category": "transform",
+      "signature": "fn(xs: &[f64], a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 7,
+      "relative_path": "transform/sorted_quantile_00e218",
+      "readme_path": "transform/sorted_quantile_00e218/README.md",
+      "vectors_path": "transform/sorted_quantile_00e218/vectors.json"
+    },
+    {
+      "canonical_slug": "standard_normal_sf_fd4f9f",
+      "category": "transform",
+      "signature": "fn(a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/standard_normal_sf_fd4f9f",
+      "readme_path": "transform/standard_normal_sf_fd4f9f/README.md",
+      "vectors_path": "transform/standard_normal_sf_fd4f9f/vectors.json"
+    },
+    {
+      "canonical_slug": "transform_kernel_2a42e5",
+      "category": "transform",
+      "signature": "fn(a: f64, b: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/transform_kernel_2a42e5",
+      "readme_path": "transform/transform_kernel_2a42e5/README.md",
+      "vectors_path": "transform/transform_kernel_2a42e5/vectors.json"
+    },
+    {
+      "canonical_slug": "transform_kernel_aa20a5",
+      "category": "transform",
+      "signature": "fn(a: f64, b: f64, c: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/transform_kernel_aa20a5",
+      "readme_path": "transform/transform_kernel_aa20a5/README.md",
+      "vectors_path": "transform/transform_kernel_aa20a5/vectors.json"
+    },
+    {
+      "canonical_slug": "transform_kernel_ad0a52",
+      "category": "transform",
+      "signature": "fn(k: i64, m: i64, q: i64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/transform_kernel_ad0a52",
+      "readme_path": "transform/transform_kernel_ad0a52/README.md",
+      "vectors_path": "transform/transform_kernel_ad0a52/vectors.json"
+    },
+    {
+      "canonical_slug": "transform_kernel_c7ad70",
+      "category": "transform",
+      "signature": "fn(a: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/transform_kernel_c7ad70",
+      "readme_path": "transform/transform_kernel_c7ad70/README.md",
+      "vectors_path": "transform/transform_kernel_c7ad70/vectors.json"
+    },
+    {
+      "canonical_slug": "transform_kernel_ea4f33",
+      "category": "transform",
+      "signature": "fn(a: f64, b: f64, c: f64, d: f64, a4: f64, a5: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/transform_kernel_ea4f33",
+      "readme_path": "transform/transform_kernel_ea4f33/README.md",
+      "vectors_path": "transform/transform_kernel_ea4f33/vectors.json"
+    },
+    {
+      "canonical_slug": "transform_kernel_f07c60",
+      "category": "transform",
+      "signature": "fn(a: f64, k: i64, b: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/transform_kernel_f07c60",
+      "readme_path": "transform/transform_kernel_f07c60/README.md",
+      "vectors_path": "transform/transform_kernel_f07c60/vectors.json"
+    },
+    {
+      "canonical_slug": "velocity_8d21a8",
+      "category": "transform",
+      "signature": "fn(a: f64, b: f64, c: f64, d: f64) -> f64",
+      "complexity": "Time `O(1)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/velocity_8d21a8",
+      "readme_path": "transform/velocity_8d21a8/README.md",
+      "vectors_path": "transform/velocity_8d21a8/vectors.json"
+    },
+    {
+      "canonical_slug": "wrap_bearing_3e4fc2",
+      "category": "transform",
+      "signature": "fn(a: f64) -> f64",
+      "complexity": "Time `O(n)`, Space `O(1) auxiliary`",
+      "languages": [
+        "c",
+        "cpp",
+        "java",
+        "js",
+        "python",
+        "rust"
+      ],
+      "vector_case_count": 6,
+      "relative_path": "transform/wrap_bearing_3e4fc2",
+      "readme_path": "transform/wrap_bearing_3e4fc2/README.md",
+      "vectors_path": "transform/wrap_bearing_3e4fc2/vectors.json"
+    }
+  ]
+}

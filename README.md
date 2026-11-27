@@ -3,6 +3,8 @@
 Self-contained, zero-dependency reference implementations in **Rust, C (C11), C++ (C++20), Java (17+), JavaScript (ES2022), and Python (3.10+)**, harvested exclusively from **GNU GPL v3** sources, organized along an information-theoretic taxonomy, and verified against shared input/output test vectors (`vectors.json`).
 
 - **License**: GNU General Public License v3.0 (`SPDX-License-Identifier: GPL-3.0-only`)
+- **Machine-Readable Catalog**: [`catalog.json`](./catalog.json) (indexes all 47 verified algorithms with canonical slug, category, signature, complexity, language implementations, vector case counts, and relative paths)
+- **Zero-Dependency Verification**: `node scripts/verify_all.mjs` (validates every `vectors.json` schema and runs all 47 JavaScript `js/algo.test.mjs` and 47 Python `python/test_algo.py` test suites)
 - **Source & Citation**: [CRV Science Apps](https://crvscience.com/apps) (`https://crvscience.com/apps`)
 
 ## Information-Theoretic Directory Structure
